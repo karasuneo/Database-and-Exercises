@@ -3,14 +3,14 @@ services:
   php:
     container_name: Database_And_Exercises_PHP
     build:
-      context: ./docker/php
+      context: ./Docker/php
       dockerfile: Dockerfile
     stdin_open: true
     tty: true
     volumes:
       - ../src:/var/www/html
     ports:
-      - 8000:8000
+      - 8000:80
     depends_on:
       - "mriadb"
 
@@ -22,6 +22,6 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./Docker/mariadb/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       MYSQL_ROOT_PASSWORD: admin
