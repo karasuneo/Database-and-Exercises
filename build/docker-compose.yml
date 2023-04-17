@@ -12,9 +12,9 @@ services:
     ports:
       - 8000:80
     depends_on:
-      - "mriadb"
+      - "mariadb"
 
-  mriadb:
+  mariadb:
     container_name: Database_And_Exercises_DB
     build:
       context: ./Docker/mariadb
