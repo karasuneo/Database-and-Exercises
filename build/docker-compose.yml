@@ -22,6 +22,6 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./Docker/mariadb/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./Docker/mariadb/mysqld_charset.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       MYSQL_ROOT_PASSWORD: admin
