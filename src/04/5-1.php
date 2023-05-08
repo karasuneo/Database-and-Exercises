@@ -1,9 +1,9 @@
 <?php
 class Board
 {
-    public $subject;
-    public $name;
-    public $content;
+    public $subject = "数学";
+    public $name = "田中太郎";
+    public $content = "分からない問題があります。";
     public function dispArticle()
     {
         print "件名 : " . $this->subject . "<br>";
