@@ -16,3 +16,7 @@ http://localhost:8000/hello.php にアクセスすると phpinfo(); の内容が
 ```
 docker exec -it Database_And_Exercises_DB bash
 ```
+
+```
+mysql -u root -p
+```

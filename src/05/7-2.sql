@@ -1,0 +1,1 @@
+INSERT INTO goods (goods_name, price) VALUES ('自動車', 1000);
