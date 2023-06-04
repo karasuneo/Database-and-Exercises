@@ -29,13 +29,13 @@ ini_set( "error_reporting", E_ALL );
 //----------------------------------------------------
 
 // データベース接続ユーザー名
-define("_DB_USER", "sample");
+define("_DB_USER", "root");
 
 // データベース接続パスワード
-define("_DB_PASS", "password");
+define("_DB_PASS", "admin");
 
 // データベースホスト名
-define("_DB_HOST", "localhost");
+define("_DB_HOST", "Database_And_Exercises_DB");
 
 // データベース名
 define("_DB_NAME", "sampledb");
