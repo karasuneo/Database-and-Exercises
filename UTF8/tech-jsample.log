@@ -1,0 +1,4402 @@
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.uptex) (TeX Live 2023) (preloaded format=uplatex 2023.4.11)  29 MAY 2023 06:07
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**tech-jsample.tex
+(./tech-jsample.tex
+pLaTeX2e <2023-02-14u04>+1 (based on LaTeX2e <2022-11-01> patch level 1)
+L3 programming layer <2023-03-30> (./ipsj.cls
+Document Class: ipsj 2015/10/30 v2.00 IPSJ class
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 149.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+\c@@paper=\count184
+
+\ProcessOptions ->\let \ds@ \@empty \protected@edef \@curroptions {\@ptionlist 
+{\@currname .\@currext }}\@ifstar \@xprocess@ptions \@process@ptions 
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\@ptionlist #1->\@ifundefined {opt@#1}\@empty {\csname opt@#1\endcsname }
+#1<-\@currname .\@currext 
+
+\@ifundefined #1->\ifcsname #1\endcsname \@ifundefin@d@i \else \@ifundefin@d@ii
+ \fi {#1}
+#1<-opt@\@currname .\@currext 
+
+\@currname ->ipsj
+
+\@currext ->cls
+
+\@ifundefin@d@i #1\fi #2->\fi \expandafter \ifx \csname #2\endcsname \relax \@i
+fundefin@d@ii \fi \@secondoftwo 
+#1<-\else \@ifundefin@d@ii 
+#2<-opt@\@currname .\@currext 
+
+\@currname ->ipsj
+
+\@currext ->cls
+
+\@secondoftwo #1#2->#2
+#1<-\@empty 
+#2<-\csname opt@\@currname .\@currext \endcsname 
+
+\@currname ->ipsj
+
+\@currext ->cls
+
+\opt@ipsj.cls ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\@ifstar #1->\@ifnextchar *{\@firstoftwo {#1}}
+#1<-\@xprocess@ptions 
+
+\@ifnextchar #1#2#3->\let \reserved@d =#1\def \reserved@a {#2}\def \reserved@b 
+{#3}\futurelet \@let@token \@ifnch 
+#1<-*
+#2<-\@firstoftwo {\@xprocess@ptions }
+#3<-\@process@ptions 
+
+\@ifnch ->\ifx \@let@token \@sptoken \let \reserved@c \@xifnch \else \ifx \@let
+@token \reserved@d \let \reserved@c \reserved@a \else \let \reserved@c \reserve
+d@b \fi \fi \reserved@c 
+
+\reserved@c ->\@process@ptions 
+
+\@process@ptions ->\@for \CurrentOption :=\@declaredoptions \do {\ifx \CurrentO
+ption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{,\ifx \@currext \@
+clsextension \else \@classoptionslist ,\fi \@curroptions ,}\ifin@ \@use@ption \
+expandafter \let \csname ds@\CurrentOption \endcsname \@empty \fi \fi }\@proces
+s@pti@ns 
+
+\@for #1:=#2\do #3->\expandafter \def \expandafter \@fortmp \expandafter {#2}\i
+fx \@fortmp \@empty \else \expandafter \@forloop #2,\@nil ,\@nil \@@ #1{#3}\fi 
+#1<-\CurrentOption 
+#2<-\@declaredoptions 
+#3<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@declaredoptions ->,Proof,LAYOUT,submit,DAM,english,technote,sigrecommended,in
+vited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,
+abstract,systems,services,devices,preface,draft,OT,techrep,noauthor,system,Expr
+ess,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,reco
+mmendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j
+,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twos
+ide,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,ope
+nbib,disablejfam,final
+
+\@declaredoptions ->,Proof,LAYOUT,submit,DAM,english,technote,sigrecommended,in
+vited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,
+abstract,systems,services,devices,preface,draft,OT,techrep,noauthor,system,Expr
+ess,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,reco
+mmendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j
+,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twos
+ide,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,ope
+nbib,disablejfam,final
+
+\@forloop #1,#2,#3\@@ #4#5->\def #4{#1}\ifx #4\@nnil \else #5\def #4{#2}\ifx #4
+\@nnil \else #5\@iforloop #3\@@ #4{#5}\fi \fi 
+#1<-
+#2<-Proof
+#3<-LAYOUT,submit,DAM,english,technote,sigrecommended,invited,PRO,ACS,TOD,TOM,C
+DS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,servic
+es,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TC
+E,invitedshort,recommendedshort,recommendedresearch,recommendedpractice,recomme
+ndedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4
+p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn
+,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,
+\@nil ,\@nil 
+#4<-\CurrentOption 
+#5<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->Proof
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,Proof,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,Proof,
+#2<-,submit,techrep,
+
+\in@@ #1,Proof,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-LAYOUT
+#2<-submit,DAM,english,technote,sigrecommended,invited,PRO,ACS,TOD,TOM,CDS,DC,D
+CON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devi
+ces,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invit
+edshort,recommendedshort,recommendedresearch,recommendedpractice,recommendedcon
+tent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,1
+0pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlep
+age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
+\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->LAYOUT
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,LAYOUT,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,LAYOUT,
+#2<-,submit,techrep,
+
+\in@@ #1,LAYOUT,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-submit
+#2<-DAM,english,technote,sigrecommended,invited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA
+,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devices,pre
+face,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort
+,recommendedshort,recommendedresearch,recommendedpractice,recommendedcontent,pr
+eprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11p
+t,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,not
+itlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->submit
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,submit,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,submit,
+#2<-,submit,techrep,
+
+\in@@ #1,submit,->
+#1<-
+
+\in@true ->\let \ifin@ \iftrue 
+
+\@use@ption ->\@expandtwoargs \@removeelement {\expandafter \@remove@eq@value \
+CurrentOption =\@nil }\@unusedoptionlist \@unusedoptionlist \csname ds@\detoken
+ize \expandafter {\CurrentOption }\endcsname 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\@removeelement 
+#2<-\expandafter \@remove@eq@value \CurrentOption =\@nil 
+#3<-\@unusedoptionlist 
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->submit
+
+\@remove@eq@value #1=#2\@nil ->#1
+#1<-submit
+#2<-
+
+\@unusedoptionlist ->
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\@removeelement {submit}{}
+
+\@removeelement #1#2#3->\def \reserved@a ##1,#1,##2\reserved@a {##1,##2\reserve
+d@b }\def \reserved@b ##1,\reserved@b ##2\reserved@b {\ifx ,##1\@empty \else ##
+1\fi }\edef #3{\expandafter \reserved@b \reserved@a ,#2,\reserved@b ,#1,\reserv
+ed@a }
+#1<-submit
+#2<-
+#3<-\@unusedoptionlist 
+
+\reserved@a #1,submit,#2\reserved@a ->#1,#2\reserved@b 
+#1<-,,\reserved@b 
+#2<-
+
+\reserved@b #1,\reserved@b #2\reserved@b ->\ifx ,#1\@empty \else #1\fi 
+#1<-,
+#2<-,
+
+\@empty ->
+
+\CurrentOption ->submit
+
+\ds@submit ->\@submittrue 
+
+\@submittrue ->\let \if@submit \iftrue 
+
+\CurrentOption ->submit
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-DAM
+#2<-english,technote,sigrecommended,invited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBI
+O,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devices,preface
+,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,rec
+ommendedshort,recommendedresearch,recommendedpractice,recommendedcontent,prepri
+nt,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12
+pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitle
+page,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->DAM
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,DAM,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,DAM,
+#2<-,submit,techrep,
+
+\in@@ #1,DAM,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-english
+#2<-technote,sigrecommended,invited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,J
+IP,Data,Survey,Research,Short,abstract,systems,services,devices,preface,draft,O
+T,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recommended
+short,recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4pap
+er,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,lands
+cape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,ope
+nright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->english
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,english,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,english,
+#2<-,submit,techrep,
+
+\in@@ #1,english,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-technote
+#2<-sigrecommended,invited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,S
+urvey,Research,Short,abstract,systems,services,devices,preface,draft,OT,techrep
+,noauthor,system,Express,Practice,Content,TCE,invitedshort,recommendedshort,rec
+ommendedresearch,recommendedpractice,recommendedcontent,preprint,a4paper,a5pape
+r,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,ment
+uke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,op
+enany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->technote
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,technote,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,technote,
+#2<-,submit,techrep,
+
+\in@@ #1,technote,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-sigrecommended
+#2<-invited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,
+Short,abstract,systems,services,devices,preface,draft,OT,techrep,noauthor,syste
+m,Express,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearc
+h,recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5pap
+er,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,onesid
+e,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fle
+qn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->sigrecommended
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,sigrecommended,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,sigrecommended,
+#2<-,submit,techrep,
+
+\in@@ #1,sigrecommended,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-invited
+#2<-PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,ab
+stract,systems,services,devices,preface,draft,OT,techrep,noauthor,system,Expres
+s,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,recomm
+endedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a
+5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twosid
+e,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openb
+ib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->invited
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,invited,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,invited,
+#2<-,submit,techrep,
+
+\in@@ #1,invited,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-PRO
+#2<-ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstra
+ct,systems,services,devices,preface,draft,OT,techrep,noauthor,system,Express,Pr
+actice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,recommende
+dpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b
+4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,on
+ecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,d
+isablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->PRO
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,PRO,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,PRO,
+#2<-,submit,techrep,
+
+\in@@ #1,PRO,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-ACS
+#2<-TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,s
+ystems,services,devices,preface,draft,OT,techrep,noauthor,system,Express,Practi
+ce,Content,TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpra
+ctice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b
+5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecol
+umn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disab
+lejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->ACS
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,ACS,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,ACS,
+#2<-,submit,techrep,
+
+\in@@ #1,ACS,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-TOD
+#2<-TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,syste
+ms,services,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,C
+ontent,TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpractic
+e,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a
+4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,
+twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejf
+am,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->TOD
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,TOD,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,TOD,
+#2<-,submit,techrep,
+
+\in@@ #1,TOD,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-TOM
+#2<-CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,s
+ervices,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,Conte
+nt,TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpractice,re
+commendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a
+5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twoc
+olumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,f
+inal,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->TOM
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,TOM,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,TOM,
+#2<-,submit,techrep,
+
+\in@@ #1,TOM,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-CDS
+#2<-DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,servi
+ces,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,T
+CE,invitedshort,recommendedshort,recommendedresearch,recommendedpractice,recomm
+endedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b
+4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolum
+n,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final
+,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->CDS
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,CDS,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,CDS,
+#2<-,submit,techrep,
+
+\in@@ #1,CDS,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-DC
+#2<-DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services
+,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,
+invitedshort,recommendedshort,recommendedresearch,recommendedpractice,recommend
+edcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,
+b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,t
+itlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@
+nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->DC
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,DC,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,DC,
+#2<-,submit,techrep,
+
+\in@@ #1,DC,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-DCON
+#2<-CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devi
+ces,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invit
+edshort,recommendedshort,recommendedresearch,recommendedpractice,recommendedcon
+tent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,1
+0pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlep
+age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
+\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->DCON
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,DCON,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,DCON,
+#2<-,submit,techrep,
+
+\in@@ #1,DCON,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-CVA
+#2<-TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devices,
+preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedsh
+ort,recommendedshort,recommendedresearch,recommendedpractice,recommendedcontent
+,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,
+11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,
+notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@ni
+l 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->CVA
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,CVA,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,CVA,
+#2<-,submit,techrep,
+
+\in@@ #1,CVA,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-TBIO
+#2<-SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devices,prefa
+ce,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,r
+ecommendedshort,recommendedresearch,recommendedpractice,recommendedcontent,prep
+rint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,
+12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notit
+lepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->TBIO
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,TBIO,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,TBIO,
+#2<-,submit,techrep,
+
+\in@@ #1,TBIO,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-SLDM
+#2<-JIP,Data,Survey,Research,Short,abstract,systems,services,devices,preface,dr
+aft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recomm
+endedshort,recommendedresearch,recommendedpractice,recommendedcontent,preprint,
+a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,
+landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepag
+e,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->SLDM
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,SLDM,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,SLDM,
+#2<-,submit,techrep,
+
+\in@@ #1,SLDM,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-JIP
+#2<-Data,Survey,Research,Short,abstract,systems,services,devices,preface,draft,
+OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recommende
+dshort,recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4pa
+per,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,land
+scape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,op
+enright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->JIP
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,JIP,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,JIP,
+#2<-,submit,techrep,
+
+\in@@ #1,JIP,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Data
+#2<-Survey,Research,Short,abstract,systems,services,devices,preface,draft,OT,te
+chrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recommendedshor
+t,recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4paper,a
+5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape
+,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openrig
+ht,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->Data
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,Data,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,Data,
+#2<-,submit,techrep,
+
+\in@@ #1,Data,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Survey
+#2<-Research,Short,abstract,systems,services,devices,preface,draft,OT,techrep,n
+oauthor,system,Express,Practice,Content,TCE,invitedshort,recommendedshort,recom
+mendedresearch,recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,
+b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuk
+e,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,open
+any,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->Survey
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,Survey,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,Survey,
+#2<-,submit,techrep,
+
+\in@@ #1,Survey,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Research
+#2<-Short,abstract,systems,services,devices,preface,draft,OT,techrep,noauthor,s
+ystem,Express,Practice,Content,TCE,invitedshort,recommendedshort,recommendedres
+earch,recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b
+5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,on
+eside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno
+,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->Research
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,Research,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,Research,
+#2<-,submit,techrep,
+
+\in@@ #1,Research,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Short
+#2<-abstract,systems,services,devices,preface,draft,OT,techrep,noauthor,system,
+Express,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,
+recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper
+,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,
+twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn
+,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->Short
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,Short,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,Short,
+#2<-,submit,techrep,
+
+\in@@ #1,Short,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-abstract
+#2<-systems,services,devices,preface,draft,OT,techrep,noauthor,system,Express,P
+ractice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,recommend
+edpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,
+b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,o
+necolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,
+disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->abstract
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,abstract,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,abstract,
+#2<-,submit,techrep,
+
+\in@@ #1,abstract,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-systems
+#2<-services,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,
+Content,TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpracti
+ce,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,
+a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn
+,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablej
+fam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->systems
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,systems,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,systems,
+#2<-,submit,techrep,
+
+\in@@ #1,systems,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-services
+#2<-devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,T
+CE,invitedshort,recommendedshort,recommendedresearch,recommendedpractice,recomm
+endedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b
+4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolum
+n,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final
+,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->services
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,services,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,services,
+#2<-,submit,techrep,
+
+\in@@ #1,services,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-devices
+#2<-preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invit
+edshort,recommendedshort,recommendedresearch,recommendedpractice,recommendedcon
+tent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,1
+0pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlep
+age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
+\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->devices
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,devices,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,devices,
+#2<-,submit,techrep,
+
+\in@@ #1,devices,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-preface
+#2<-draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,
+recommendedshort,recommendedresearch,recommendedpractice,recommendedcontent,pre
+print,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt
+,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,noti
+tlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->preface
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,preface,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,preface,
+#2<-,submit,techrep,
+
+\in@@ #1,preface,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-draft
+#2<-OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recomm
+endedshort,recommendedresearch,recommendedpractice,recommendedcontent,preprint,
+a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,
+landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepag
+e,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->draft
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,draft,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,draft,
+#2<-,submit,techrep,
+
+\in@@ #1,draft,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-OT
+#2<-techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recommend
+edshort,recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4p
+aper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,lan
+dscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,o
+penright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->OT
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,OT,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,OT,
+#2<-,submit,techrep,
+
+\in@@ #1,OT,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-techrep
+#2<-noauthor,system,Express,Practice,Content,TCE,invitedshort,recommendedshort,
+recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4paper,a5p
+aper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,m
+entuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright
+,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->techrep
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,techrep,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,techrep,
+#2<-,submit,techrep,
+
+\in@@ #1,techrep,->
+#1<-,submit
+
+\in@true ->\let \ifin@ \iftrue 
+
+\@use@ption ->\@expandtwoargs \@removeelement {\expandafter \@remove@eq@value \
+CurrentOption =\@nil }\@unusedoptionlist \@unusedoptionlist \csname ds@\detoken
+ize \expandafter {\CurrentOption }\endcsname 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\@removeelement 
+#2<-\expandafter \@remove@eq@value \CurrentOption =\@nil 
+#3<-\@unusedoptionlist 
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->techrep
+
+\@remove@eq@value #1=#2\@nil ->#1
+#1<-techrep
+#2<-
+
+\@unusedoptionlist ->
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\@removeelement {techrep}{}
+
+\@removeelement #1#2#3->\def \reserved@a ##1,#1,##2\reserved@a {##1,##2\reserve
+d@b }\def \reserved@b ##1,\reserved@b ##2\reserved@b {\ifx ,##1\@empty \else ##
+1\fi }\edef #3{\expandafter \reserved@b \reserved@a ,#2,\reserved@b ,#1,\reserv
+ed@a }
+#1<-techrep
+#2<-
+#3<-\@unusedoptionlist 
+
+\reserved@a #1,techrep,#2\reserved@a ->#1,#2\reserved@b 
+#1<-,,\reserved@b 
+#2<-
+
+\reserved@b #1,\reserved@b #2\reserved@b ->\ifx ,#1\@empty \else #1\fi 
+#1<-,
+#2<-,
+
+\@empty ->
+
+\CurrentOption ->techrep
+
+\ds@techrep ->\DS@techreptrue 
+
+\DS@techreptrue ->\let \ifDS@techrep \iftrue 
+
+\CurrentOption ->techrep
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-noauthor
+#2<-system,Express,Practice,Content,TCE,invitedshort,recommendedshort,recommend
+edresearch,recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4pa
+per,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,ta
+te,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,
+leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->noauthor
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,noauthor,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,noauthor,
+#2<-,submit,techrep,
+
+\in@@ #1,noauthor,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-system
+#2<-Express,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresea
+rch,recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5p
+aper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,ones
+ide,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,f
+leqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->system
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,system,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,system,
+#2<-,submit,techrep,
+
+\in@@ #1,system,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Express
+#2<-Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,reco
+mmendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j
+,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twos
+ide,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,ope
+nbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->Express
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,Express,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,Express,
+#2<-,submit,techrep,
+
+\in@@ #1,Express,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Practice
+#2<-Content,TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpr
+actice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,
+b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,oneco
+lumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disa
+blejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->Practice
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,Practice,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,Practice,
+#2<-,submit,techrep,
+
+\in@@ #1,Practice,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Content
+#2<-TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpractice,r
+ecommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,
+a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,two
+column,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,
+final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->Content
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,Content,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,Content,
+#2<-,submit,techrep,
+
+\in@@ #1,Content,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-TCE
+#2<-invitedshort,recommendedshort,recommendedresearch,recommendedpractice,recom
+mendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,
+b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolu
+mn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,fina
+l,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->TCE
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,TCE,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,TCE,
+#2<-,submit,techrep,
+
+\in@@ #1,TCE,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-invitedshort
+#2<-recommendedshort,recommendedresearch,recommendedpractice,recommendedcontent
+,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,
+11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,
+notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@ni
+l 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->invitedshort
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,invitedshort,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,invitedshort,
+#2<-,submit,techrep,
+
+\in@@ #1,invitedshort,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-recommendedshort
+#2<-recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4paper
+,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landsca
+pe,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openr
+ight,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->recommendedshort
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,recommendedshort,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,recommendedshort,
+#2<-,submit,techrep,
+
+\in@@ #1,recommendedshort,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-recommendedresearch
+#2<-recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5p
+aper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,ones
+ide,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,f
+leqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->recommendedresearch
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,recommendedresearch,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,recommendedresearch,
+#2<-,submit,techrep,
+
+\in@@ #1,recommendedresearch,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-recommendedpractice
+#2<-recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j
+,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolum
+n,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disable
+jfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->recommendedpractice
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,recommendedpractice,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,recommendedpractice,
+#2<-,submit,techrep,
+
+\in@@ #1,recommendedpractice,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-recommendedcontent
+#2<-preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10
+pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepa
+ge,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\
+@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->recommendedcontent
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,recommendedcontent,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,recommendedcontent,
+#2<-,submit,techrep,
+
+\in@@ #1,recommendedcontent,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-preprint
+#2<-a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,1
+2pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitl
+epage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->preprint
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,preprint,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,preprint,
+#2<-,submit,techrep,
+
+\in@@ #1,preprint,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a4paper
+#2<-a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,land
+scape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,op
+enright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->a4paper
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,a4paper,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,a4paper,
+#2<-,submit,techrep,
+
+\in@@ #1,a4paper,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a5paper
+#2<-b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,me
+ntuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,
+openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->a5paper
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,a5paper,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,a5paper,
+#2<-,submit,techrep,
+
+\in@@ #1,a5paper,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b4paper
+#2<-b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,ta
+te,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,
+leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->b4paper
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,b4paper,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,b4paper,
+#2<-,submit,techrep,
+
+\in@@ #1,b4paper,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b5paper
+#2<-a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,onesi
+de,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fl
+eqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->b5paper
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,b5paper,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,b5paper,
+#2<-,submit,techrep,
+
+\in@@ #1,b5paper,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a4j
+#2<-a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,t
+woside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,
+openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->a4j
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,a4j,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,a4j,
+#2<-,submit,techrep,
+
+\in@@ #1,a4j,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a5j
+#2<-b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twosi
+de,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,open
+bib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->a5j
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,a5j,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,a5j,
+#2<-,submit,techrep,
+
+\in@@ #1,a5j,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b4j
+#2<-b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,o
+necolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,
+disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->b4j
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,b4j,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,b4j,
+#2<-,submit,techrep,
+
+\in@@ #1,b4j,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b5j
+#2<-a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,oneco
+lumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disa
+blejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->b5j
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,b5j,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,b5j,
+#2<-,submit,techrep,
+
+\in@@ #1,b5j,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a4p
+#2<-a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn
+,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablej
+fam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->a4p
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,a4p,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,a4p,
+#2<-,submit,techrep,
+
+\in@@ #1,a4p,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a5p
+#2<-b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,two
+column,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,
+final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->a5p
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,a5p,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,a5p,
+#2<-,submit,techrep,
+
+\in@@ #1,a5p,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b4p
+#2<-b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolu
+mn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,fina
+l,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->b4p
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,b4p,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,b4p,
+#2<-,submit,techrep,
+
+\in@@ #1,b4p,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b5p
+#2<-10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,t
+itlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@
+nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->b5p
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,b5p,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,b5p,
+#2<-,submit,techrep,
+
+\in@@ #1,b5p,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-10pt
+#2<-11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlep
+age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
+\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->10pt
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,10pt,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,10pt,
+#2<-,submit,techrep,
+
+\in@@ #1,10pt,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-11pt
+#2<-12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,n
+otitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
+ 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->11pt
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,11pt,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,11pt,
+#2<-,submit,techrep,
+
+\in@@ #1,11pt,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-12pt
+#2<-landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitl
+epage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->12pt
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,12pt,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,12pt,
+#2<-,submit,techrep,
+
+\in@@ #1,12pt,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-landscape
+#2<-mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,open
+right,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->landscape
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,landscape,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,landscape,
+#2<-,submit,techrep,
+
+\in@@ #1,landscape,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-mentuke
+#2<-tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,op
+enany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->mentuke
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,mentuke,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,mentuke,
+#2<-,submit,techrep,
+
+\in@@ #1,mentuke,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-tate
+#2<-oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany
+,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->tate
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,tate,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,tate,
+#2<-,submit,techrep,
+
+\in@@ #1,tate,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-oneside
+#2<-twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,f
+leqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->oneside
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,oneside,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,oneside,
+#2<-,submit,techrep,
+
+\in@@ #1,oneside,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-twoside
+#2<-onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,ope
+nbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->twoside
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,twoside,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,twoside,
+#2<-,submit,techrep,
+
+\in@@ #1,twoside,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-onecolumn
+#2<-twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disab
+lejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->onecolumn
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,onecolumn,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,onecolumn,
+#2<-,submit,techrep,
+
+\in@@ #1,onecolumn,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-twocolumn
+#2<-titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,fin
+al,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->twocolumn
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,twocolumn,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,twocolumn,
+#2<-,submit,techrep,
+
+\in@@ #1,twocolumn,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-titlepage
+#2<-notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
+\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->titlepage
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,titlepage,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,titlepage,
+#2<-,submit,techrep,
+
+\in@@ #1,titlepage,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-notitlepage
+#2<-openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->notitlepage
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,notitlepage,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,notitlepage,
+#2<-,submit,techrep,
+
+\in@@ #1,notitlepage,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-openright
+#2<-openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->openright
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,openright,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,openright,
+#2<-,submit,techrep,
+
+\in@@ #1,openright,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-openany
+#2<-leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->openany
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,openany,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,openany,
+#2<-,submit,techrep,
+
+\in@@ #1,openany,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-leqno
+#2<-fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->leqno
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,leqno,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,leqno,
+#2<-,submit,techrep,
+
+\in@@ #1,leqno,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-fleqn
+#2<-openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->fleqn
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,fleqn,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,fleqn,
+#2<-,submit,techrep,
+
+\in@@ #1,fleqn,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-openbib
+#2<-disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->openbib
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,openbib,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,openbib,
+#2<-,submit,techrep,
+
+\in@@ #1,openbib,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-disablejfam
+#2<-final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->disablejfam
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,disablejfam,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,disablejfam,
+#2<-,submit,techrep,
+
+\in@@ #1,disablejfam,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-final
+#2<-\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\in@ 
+#2<-,\CurrentOption ,
+#3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
+,
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->final
+
+\@curroptions ->submit,techrep
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\in@ {,final,}{,submit,techrep,}
+
+\in@ #1#2->\begingroup \def \in@@ ##1#1{}\toks@ \expandafter {\in@@ #2{}{}#1}\e
+def \in@@ {\the \toks@ }\expandafter \endgroup \ifx \in@@ \@empty \in@false \el
+se \in@true \fi 
+#1<-,final,
+#2<-,submit,techrep,
+
+\in@@ #1,final,->
+#1<-,submit,techrep,{}{}
+
+\in@false ->\let \ifin@ \iffalse 
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-\@nil 
+#2<-\@nil 
+#3<-\CurrentOption 
+#4<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@fornoop #1\@@ #2#3->
+#1<-\@nil 
+#2<-\CurrentOption 
+#3<-\ifx \CurrentOption \@empty \else \@expandtwoargs \in@ {,\CurrentOption ,}{
+,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions ,}\i
+fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
+ \fi \fi 
+
+\@process@pti@ns ->\@for \CurrentOption :=\@curroptions \do {\@ifundefined {ds@
+\detokenize \expandafter {\CurrentOption }}{\@use@ption \default@ds }\@use@ptio
+n }\@for \CurrentOption :=\@declaredoptions \do {\expandafter \let \csname ds@\
+CurrentOption \endcsname \relax }\let \CurrentOption \@empty \let \@fileswith@p
+ti@ns \@@fileswith@pti@ns \AtEndOfPackage {\expandafter \let \csname unprocesse
+doptions-\@currname .\@currext \endcsname \relax }
+
+\@for #1:=#2\do #3->\expandafter \def \expandafter \@fortmp \expandafter {#2}\i
+fx \@fortmp \@empty \else \expandafter \@forloop #2,\@nil ,\@nil \@@ #1{#3}\fi 
+#1<-\CurrentOption 
+#2<-\@curroptions 
+#3<-\@ifundefined {ds@\detokenize \expandafter {\CurrentOption }}{\@use@ption \
+default@ds }\@use@ption 
+
+\@curroptions ->submit,techrep
+
+\@curroptions ->submit,techrep
+
+\@forloop #1,#2,#3\@@ #4#5->\def #4{#1}\ifx #4\@nnil \else #5\def #4{#2}\ifx #4
+\@nnil \else #5\@iforloop #3\@@ #4{#5}\fi \fi 
+#1<-submit
+#2<-techrep
+#3<-\@nil ,\@nil 
+#4<-\CurrentOption 
+#5<-\@ifundefined {ds@\detokenize \expandafter {\CurrentOption }}{\@use@ption \
+default@ds }\@use@ption 
+
+\@ifundefined #1->\ifcsname #1\endcsname \@ifundefin@d@i \else \@ifundefin@d@ii
+ \fi {#1}
+#1<-ds@\detokenize \expandafter {\CurrentOption }
+
+\CurrentOption ->submit
+
+\@ifundefin@d@i #1\fi #2->\fi \expandafter \ifx \csname #2\endcsname \relax \@i
+fundefin@d@ii \fi \@secondoftwo 
+#1<-\else \@ifundefin@d@ii 
+#2<-ds@\detokenize \expandafter {\CurrentOption }
+
+\CurrentOption ->submit
+
+\@secondoftwo #1#2->#2
+#1<-\@use@ption \default@ds 
+#2<-\@use@ption 
+
+\@use@ption ->\@expandtwoargs \@removeelement {\expandafter \@remove@eq@value \
+CurrentOption =\@nil }\@unusedoptionlist \@unusedoptionlist \csname ds@\detoken
+ize \expandafter {\CurrentOption }\endcsname 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\@removeelement 
+#2<-\expandafter \@remove@eq@value \CurrentOption =\@nil 
+#3<-\@unusedoptionlist 
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->submit
+
+\@remove@eq@value #1=#2\@nil ->#1
+#1<-submit
+#2<-
+
+\@unusedoptionlist ->
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\@removeelement {submit}{}
+
+\@removeelement #1#2#3->\def \reserved@a ##1,#1,##2\reserved@a {##1,##2\reserve
+d@b }\def \reserved@b ##1,\reserved@b ##2\reserved@b {\ifx ,##1\@empty \else ##
+1\fi }\edef #3{\expandafter \reserved@b \reserved@a ,#2,\reserved@b ,#1,\reserv
+ed@a }
+#1<-submit
+#2<-
+#3<-\@unusedoptionlist 
+
+\reserved@a #1,submit,#2\reserved@a ->#1,#2\reserved@b 
+#1<-,,\reserved@b 
+#2<-
+
+\reserved@b #1,\reserved@b #2\reserved@b ->\ifx ,#1\@empty \else #1\fi 
+#1<-,
+#2<-,
+
+\@empty ->
+
+\CurrentOption ->submit
+
+\ds@submit ->
+
+\@ifundefined #1->\ifcsname #1\endcsname \@ifundefin@d@i \else \@ifundefin@d@ii
+ \fi {#1}
+#1<-ds@\detokenize \expandafter {\CurrentOption }
+
+\CurrentOption ->techrep
+
+\@ifundefin@d@i #1\fi #2->\fi \expandafter \ifx \csname #2\endcsname \relax \@i
+fundefin@d@ii \fi \@secondoftwo 
+#1<-\else \@ifundefin@d@ii 
+#2<-ds@\detokenize \expandafter {\CurrentOption }
+
+\CurrentOption ->techrep
+
+\@secondoftwo #1#2->#2
+#1<-\@use@ption \default@ds 
+#2<-\@use@ption 
+
+\@use@ption ->\@expandtwoargs \@removeelement {\expandafter \@remove@eq@value \
+CurrentOption =\@nil }\@unusedoptionlist \@unusedoptionlist \csname ds@\detoken
+ize \expandafter {\CurrentOption }\endcsname 
+
+\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
+rved@a 
+#1<-\@removeelement 
+#2<-\expandafter \@remove@eq@value \CurrentOption =\@nil 
+#3<-\@unusedoptionlist 
+
+\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
+ \afterassignment \restore@protect \edef 
+
+\CurrentOption ->techrep
+
+\@remove@eq@value #1=#2\@nil ->#1
+#1<-techrep
+#2<-
+
+\@unusedoptionlist ->
+
+\restore@protect ->\let \protect \@@protect 
+
+\reserved@a ->\@removeelement {techrep}{}
+
+\@removeelement #1#2#3->\def \reserved@a ##1,#1,##2\reserved@a {##1,##2\reserve
+d@b }\def \reserved@b ##1,\reserved@b ##2\reserved@b {\ifx ,##1\@empty \else ##
+1\fi }\edef #3{\expandafter \reserved@b \reserved@a ,#2,\reserved@b ,#1,\reserv
+ed@a }
+#1<-techrep
+#2<-
+#3<-\@unusedoptionlist 
+
+\reserved@a #1,techrep,#2\reserved@a ->#1,#2\reserved@b 
+#1<-,,\reserved@b 
+#2<-
+
+\reserved@b #1,\reserved@b #2\reserved@b ->\ifx ,#1\@empty \else #1\fi 
+#1<-,
+#2<-,
+
+\@empty ->
+
+\CurrentOption ->techrep
+
+\ds@techrep ->
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-\@nil 
+#2<-\@nil 
+#3<-\CurrentOption 
+#4<-\@ifundefined {ds@\detokenize \expandafter {\CurrentOption }}{\@use@ption \
+default@ds }\@use@ption 
+
+\@fornoop #1\@@ #2#3->
+#1<-\@nil 
+#2<-\CurrentOption 
+#3<-\@ifundefined {ds@\detokenize \expandafter {\CurrentOption }}{\@use@ption \
+default@ds }\@use@ption 
+
+\@for #1:=#2\do #3->\expandafter \def \expandafter \@fortmp \expandafter {#2}\i
+fx \@fortmp \@empty \else \expandafter \@forloop #2,\@nil ,\@nil \@@ #1{#3}\fi 
+#1<-\CurrentOption 
+#2<-\@declaredoptions 
+#3<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\@declaredoptions ->,Proof,LAYOUT,submit,DAM,english,technote,sigrecommended,in
+vited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,
+abstract,systems,services,devices,preface,draft,OT,techrep,noauthor,system,Expr
+ess,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,reco
+mmendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j
+,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twos
+ide,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,ope
+nbib,disablejfam,final
+
+\@declaredoptions ->,Proof,LAYOUT,submit,DAM,english,technote,sigrecommended,in
+vited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,
+abstract,systems,services,devices,preface,draft,OT,techrep,noauthor,system,Expr
+ess,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,reco
+mmendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j
+,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twos
+ide,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,ope
+nbib,disablejfam,final
+
+\@forloop #1,#2,#3\@@ #4#5->\def #4{#1}\ifx #4\@nnil \else #5\def #4{#2}\ifx #4
+\@nnil \else #5\@iforloop #3\@@ #4{#5}\fi \fi 
+#1<-
+#2<-Proof
+#3<-LAYOUT,submit,DAM,english,technote,sigrecommended,invited,PRO,ACS,TOD,TOM,C
+DS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,servic
+es,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TC
+E,invitedshort,recommendedshort,recommendedresearch,recommendedpractice,recomme
+ndedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4
+p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn
+,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,
+\@nil ,\@nil 
+#4<-\CurrentOption 
+#5<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->
+
+\CurrentOption ->Proof
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-LAYOUT
+#2<-submit,DAM,english,technote,sigrecommended,invited,PRO,ACS,TOD,TOM,CDS,DC,D
+CON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devi
+ces,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invit
+edshort,recommendedshort,recommendedresearch,recommendedpractice,recommendedcon
+tent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,1
+0pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlep
+age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
+\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->LAYOUT
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-submit
+#2<-DAM,english,technote,sigrecommended,invited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA
+,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devices,pre
+face,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort
+,recommendedshort,recommendedresearch,recommendedpractice,recommendedcontent,pr
+eprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11p
+t,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,not
+itlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->submit
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-DAM
+#2<-english,technote,sigrecommended,invited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBI
+O,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devices,preface
+,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,rec
+ommendedshort,recommendedresearch,recommendedpractice,recommendedcontent,prepri
+nt,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12
+pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitle
+page,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->DAM
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-english
+#2<-technote,sigrecommended,invited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,J
+IP,Data,Survey,Research,Short,abstract,systems,services,devices,preface,draft,O
+T,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recommended
+short,recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4pap
+er,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,lands
+cape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,ope
+nright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->english
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-technote
+#2<-sigrecommended,invited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,S
+urvey,Research,Short,abstract,systems,services,devices,preface,draft,OT,techrep
+,noauthor,system,Express,Practice,Content,TCE,invitedshort,recommendedshort,rec
+ommendedresearch,recommendedpractice,recommendedcontent,preprint,a4paper,a5pape
+r,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,ment
+uke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,op
+enany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->technote
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-sigrecommended
+#2<-invited,PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,
+Short,abstract,systems,services,devices,preface,draft,OT,techrep,noauthor,syste
+m,Express,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearc
+h,recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5pap
+er,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,onesid
+e,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fle
+qn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->sigrecommended
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-invited
+#2<-PRO,ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,ab
+stract,systems,services,devices,preface,draft,OT,techrep,noauthor,system,Expres
+s,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,recomm
+endedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a
+5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twosid
+e,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openb
+ib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->invited
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-PRO
+#2<-ACS,TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstra
+ct,systems,services,devices,preface,draft,OT,techrep,noauthor,system,Express,Pr
+actice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,recommende
+dpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b
+4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,on
+ecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,d
+isablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->PRO
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-ACS
+#2<-TOD,TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,s
+ystems,services,devices,preface,draft,OT,techrep,noauthor,system,Express,Practi
+ce,Content,TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpra
+ctice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b
+5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecol
+umn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disab
+lejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->ACS
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-TOD
+#2<-TOM,CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,syste
+ms,services,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,C
+ontent,TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpractic
+e,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a
+4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,
+twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejf
+am,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->TOD
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-TOM
+#2<-CDS,DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,s
+ervices,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,Conte
+nt,TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpractice,re
+commendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a
+5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twoc
+olumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,f
+inal,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->TOM
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-CDS
+#2<-DC,DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,servi
+ces,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,T
+CE,invitedshort,recommendedshort,recommendedresearch,recommendedpractice,recomm
+endedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b
+4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolum
+n,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final
+,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->CDS
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-DC
+#2<-DCON,CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services
+,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,
+invitedshort,recommendedshort,recommendedresearch,recommendedpractice,recommend
+edcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,
+b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,t
+itlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@
+nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->DC
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-DCON
+#2<-CVA,TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devi
+ces,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invit
+edshort,recommendedshort,recommendedresearch,recommendedpractice,recommendedcon
+tent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,1
+0pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlep
+age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
+\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->DCON
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-CVA
+#2<-TBIO,SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devices,
+preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedsh
+ort,recommendedshort,recommendedresearch,recommendedpractice,recommendedcontent
+,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,
+11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,
+notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@ni
+l 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->CVA
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-TBIO
+#2<-SLDM,JIP,Data,Survey,Research,Short,abstract,systems,services,devices,prefa
+ce,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,r
+ecommendedshort,recommendedresearch,recommendedpractice,recommendedcontent,prep
+rint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,
+12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notit
+lepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->TBIO
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-SLDM
+#2<-JIP,Data,Survey,Research,Short,abstract,systems,services,devices,preface,dr
+aft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recomm
+endedshort,recommendedresearch,recommendedpractice,recommendedcontent,preprint,
+a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,
+landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepag
+e,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->SLDM
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-JIP
+#2<-Data,Survey,Research,Short,abstract,systems,services,devices,preface,draft,
+OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recommende
+dshort,recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4pa
+per,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,land
+scape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,op
+enright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->JIP
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Data
+#2<-Survey,Research,Short,abstract,systems,services,devices,preface,draft,OT,te
+chrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recommendedshor
+t,recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4paper,a
+5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape
+,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openrig
+ht,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->Data
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Survey
+#2<-Research,Short,abstract,systems,services,devices,preface,draft,OT,techrep,n
+oauthor,system,Express,Practice,Content,TCE,invitedshort,recommendedshort,recom
+mendedresearch,recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,
+b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuk
+e,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,open
+any,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->Survey
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Research
+#2<-Short,abstract,systems,services,devices,preface,draft,OT,techrep,noauthor,s
+ystem,Express,Practice,Content,TCE,invitedshort,recommendedshort,recommendedres
+earch,recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b
+5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,on
+eside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno
+,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->Research
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Short
+#2<-abstract,systems,services,devices,preface,draft,OT,techrep,noauthor,system,
+Express,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,
+recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper
+,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,
+twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn
+,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->Short
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-abstract
+#2<-systems,services,devices,preface,draft,OT,techrep,noauthor,system,Express,P
+ractice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,recommend
+edpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,
+b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,o
+necolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,
+disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->abstract
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-systems
+#2<-services,devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,
+Content,TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpracti
+ce,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,
+a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn
+,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablej
+fam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->systems
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-services
+#2<-devices,preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,T
+CE,invitedshort,recommendedshort,recommendedresearch,recommendedpractice,recomm
+endedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b
+4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolum
+n,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final
+,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->services
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-devices
+#2<-preface,draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invit
+edshort,recommendedshort,recommendedresearch,recommendedpractice,recommendedcon
+tent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,1
+0pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlep
+age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
+\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->devices
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-preface
+#2<-draft,OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,
+recommendedshort,recommendedresearch,recommendedpractice,recommendedcontent,pre
+print,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt
+,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,noti
+tlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->preface
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-draft
+#2<-OT,techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recomm
+endedshort,recommendedresearch,recommendedpractice,recommendedcontent,preprint,
+a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,
+landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepag
+e,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->draft
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-OT
+#2<-techrep,noauthor,system,Express,Practice,Content,TCE,invitedshort,recommend
+edshort,recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4p
+aper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,lan
+dscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,o
+penright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->OT
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-techrep
+#2<-noauthor,system,Express,Practice,Content,TCE,invitedshort,recommendedshort,
+recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4paper,a5p
+aper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,m
+entuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright
+,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->techrep
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-noauthor
+#2<-system,Express,Practice,Content,TCE,invitedshort,recommendedshort,recommend
+edresearch,recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4pa
+per,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,ta
+te,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,
+leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->noauthor
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-system
+#2<-Express,Practice,Content,TCE,invitedshort,recommendedshort,recommendedresea
+rch,recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5p
+aper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,ones
+ide,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,f
+leqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->system
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Express
+#2<-Practice,Content,TCE,invitedshort,recommendedshort,recommendedresearch,reco
+mmendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j
+,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twos
+ide,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,ope
+nbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->Express
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Practice
+#2<-Content,TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpr
+actice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,
+b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,oneco
+lumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disa
+blejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->Practice
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-Content
+#2<-TCE,invitedshort,recommendedshort,recommendedresearch,recommendedpractice,r
+ecommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,
+a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,two
+column,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,
+final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->Content
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-TCE
+#2<-invitedshort,recommendedshort,recommendedresearch,recommendedpractice,recom
+mendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,
+b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolu
+mn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,fina
+l,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->TCE
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-invitedshort
+#2<-recommendedshort,recommendedresearch,recommendedpractice,recommendedcontent
+,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,
+11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,
+notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@ni
+l 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->invitedshort
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-recommendedshort
+#2<-recommendedresearch,recommendedpractice,recommendedcontent,preprint,a4paper
+,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landsca
+pe,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openr
+ight,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->recommendedshort
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-recommendedresearch
+#2<-recommendedpractice,recommendedcontent,preprint,a4paper,a5paper,b4paper,b5p
+aper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,ones
+ide,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,f
+leqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->recommendedresearch
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-recommendedpractice
+#2<-recommendedcontent,preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j
+,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolum
+n,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disable
+jfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->recommendedpractice
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-recommendedcontent
+#2<-preprint,a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10
+pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepa
+ge,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\
+@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->recommendedcontent
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-preprint
+#2<-a4paper,a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,1
+2pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitl
+epage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->preprint
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a4paper
+#2<-a5paper,b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,land
+scape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,op
+enright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->a4paper
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a5paper
+#2<-b4paper,b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,me
+ntuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,
+openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->a5paper
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b4paper
+#2<-b5paper,a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,ta
+te,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,
+leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->b4paper
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b5paper
+#2<-a4j,a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,onesi
+de,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fl
+eqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->b5paper
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a4j
+#2<-a5j,b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,t
+woside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,
+openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->a4j
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a5j
+#2<-b4j,b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twosi
+de,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,open
+bib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->a5j
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b4j
+#2<-b5j,a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,o
+necolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,
+disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->b4j
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b5j
+#2<-a4p,a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,oneco
+lumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disa
+blejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->b5j
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a4p
+#2<-a5p,b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn
+,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablej
+fam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->a4p
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-a5p
+#2<-b4p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,two
+column,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,
+final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->a5p
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b4p
+#2<-b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolu
+mn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,fina
+l,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->b4p
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-b5p
+#2<-10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,t
+itlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@
+nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->b5p
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-10pt
+#2<-11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlep
+age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
+\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->10pt
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-11pt
+#2<-12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,n
+otitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
+ 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->11pt
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-12pt
+#2<-landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitl
+epage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->12pt
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-landscape
+#2<-mentuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,open
+right,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->landscape
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-mentuke
+#2<-tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,op
+enany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->mentuke
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-tate
+#2<-oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany
+,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->tate
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-oneside
+#2<-twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,f
+leqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->oneside
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-twoside
+#2<-onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,ope
+nbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->twoside
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-onecolumn
+#2<-twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disab
+lejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->onecolumn
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-twocolumn
+#2<-titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,fin
+al,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->twocolumn
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-titlepage
+#2<-notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
+\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsna
