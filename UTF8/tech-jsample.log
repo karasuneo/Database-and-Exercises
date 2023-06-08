@@ -1,34 +1,36 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.uptex) (TeX Live 2023) (preloaded format=uplatex 2023.4.11)  29 MAY 2023 06:07
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.17)  8 JUN 2023 14:17
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **tech-jsample.tex
 (./tech-jsample.tex
-pLaTeX2e <2023-02-14u04>+1 (based on LaTeX2e <2022-11-01> patch level 1)
-L3 programming layer <2023-03-30> (./ipsj.cls
+pLaTeX2e <2020-10-01>+2 (based on LaTeX2e <2020-10-01> patch level 4)
+L3 programming layer <2021-05-07> (./ipsj.cls
 Document Class: ipsj 2015/10/30 v2.00 IPSJ class
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/graph
+ics/color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/graph
+ics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: dvips.def on input line 149.
+Package color Info: Driver file: dvips.def on input line 147.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/graph
+ics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 )
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/graph
+ics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)
-(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-\c@@paper=\count184
+))
+\c@@paper=\count178
 
-\ProcessOptions ->\let \ds@ \@empty \protected@edef \@curroptions {\@ptionlist 
-{\@currname .\@currext }}\@ifstar \@xprocess@ptions \@process@ptions 
-
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
+\ProcessOptions ->\let \ds@ \@empty \edef \@curroptions {\@ptionlist {\@currnam
+e .\@currext }}\@ifstar \@xprocess@ptions \@process@ptions 
 
 \@ptionlist #1->\@ifundefined {opt@#1}\@empty {\csname opt@#1\endcsname }
 #1<-\@currname .\@currext 
@@ -59,8 +61,6 @@ fundefin@d@ii \fi \@secondoftwo
 \@currext ->cls
 
 \opt@ipsj.cls ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \@ifstar #1->\@ifnextchar *{\@firstoftwo {#1}}
 #1<-\@xprocess@ptions 
@@ -128,21 +128,15 @@ p,b5p,10pt,11pt,12pt,landscape,mentuke,tate,oneside,twoside,onecolumn,twocolumn
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->Proof
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,Proof,}{,submit,techrep,}
 
@@ -174,21 +168,15 @@ age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->LAYOUT
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,LAYOUT,}{,submit,techrep,}
 
@@ -219,21 +207,15 @@ itlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->submit
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,submit,}{,submit,techrep,}
 
@@ -248,28 +230,17 @@ se \in@true \fi
 
 \in@true ->\let \ifin@ \iftrue 
 
-\@use@ption ->\@expandtwoargs \@removeelement {\expandafter \@remove@eq@value \
-CurrentOption =\@nil }\@unusedoptionlist \@unusedoptionlist \csname ds@\detoken
-ize \expandafter {\CurrentOption }\endcsname 
+\@use@ption ->\@expandtwoargs \@removeelement \CurrentOption \@unusedoptionlist
+ \@unusedoptionlist \csname ds@\CurrentOption \endcsname 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\@removeelement 
-#2<-\expandafter \@remove@eq@value \CurrentOption =\@nil 
+#2<-\CurrentOption 
 #3<-\@unusedoptionlist 
-
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
 
 \CurrentOption ->submit
 
-\@remove@eq@value #1=#2\@nil ->#1
-#1<-submit
-#2<-
-
 \@unusedoptionlist ->
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\@removeelement {submit}{}
 
@@ -315,21 +286,15 @@ page,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->DAM
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,DAM,}{,submit,techrep,}
 
@@ -360,21 +325,15 @@ nright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->english
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,english,}{,submit,techrep,}
 
@@ -405,21 +364,15 @@ enany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->technote
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,technote,}{,submit,techrep,}
 
@@ -450,21 +403,15 @@ qn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->sigrecommended
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,sigrecommended,}{,submit,techrep,}
 
@@ -495,21 +442,15 @@ ib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->invited
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,invited,}{,submit,techrep,}
 
@@ -540,21 +481,15 @@ isablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->PRO
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,PRO,}{,submit,techrep,}
 
@@ -585,21 +520,15 @@ lejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->ACS
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,ACS,}{,submit,techrep,}
 
@@ -630,21 +559,15 @@ am,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->TOD
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,TOD,}{,submit,techrep,}
 
@@ -675,21 +598,15 @@ inal,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->TOM
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,TOM,}{,submit,techrep,}
 
@@ -720,21 +637,15 @@ n,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->CDS
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,CDS,}{,submit,techrep,}
 
@@ -765,21 +676,15 @@ nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->DC
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,DC,}{,submit,techrep,}
 
@@ -810,21 +715,15 @@ age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->DCON
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,DCON,}{,submit,techrep,}
 
@@ -855,21 +754,15 @@ l
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->CVA
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,CVA,}{,submit,techrep,}
 
@@ -899,21 +792,15 @@ lepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->TBIO
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,TBIO,}{,submit,techrep,}
 
@@ -943,21 +830,15 @@ e,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->SLDM
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,SLDM,}{,submit,techrep,}
 
@@ -987,21 +868,15 @@ enright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->JIP
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,JIP,}{,submit,techrep,}
 
@@ -1031,21 +906,15 @@ ht,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->Data
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,Data,}{,submit,techrep,}
 
@@ -1075,21 +944,15 @@ any,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->Survey
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,Survey,}{,submit,techrep,}
 
@@ -1119,21 +982,15 @@ eside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->Research
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,Research,}{,submit,techrep,}
 
@@ -1163,21 +1020,15 @@ twoside,onecolumn,twocolumn,titlepage,notitlepage,openright,openany,leqno,fleqn
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->Short
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,Short,}{,submit,techrep,}
 
@@ -1207,21 +1058,15 @@ disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->abstract
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,abstract,}{,submit,techrep,}
 
@@ -1251,21 +1096,15 @@ fam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->systems
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,systems,}{,submit,techrep,}
 
@@ -1295,21 +1134,15 @@ n,titlepage,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->services
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,services,}{,submit,techrep,}
 
@@ -1339,21 +1172,15 @@ age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->devices
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,devices,}{,submit,techrep,}
 
@@ -1382,21 +1209,15 @@ tlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->preface
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,preface,}{,submit,techrep,}
 
@@ -1425,21 +1246,15 @@ e,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->draft
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,draft,}{,submit,techrep,}
 
@@ -1468,21 +1283,15 @@ penright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->OT
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,OT,}{,submit,techrep,}
 
@@ -1511,21 +1320,15 @@ entuke,tate,oneside,twoside,onecolumn,twocolumn,titlepage,notitlepage,openright
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->techrep
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,techrep,}{,submit,techrep,}
 
@@ -1540,28 +1343,17 @@ se \in@true \fi
 
 \in@true ->\let \ifin@ \iftrue 
 
-\@use@ption ->\@expandtwoargs \@removeelement {\expandafter \@remove@eq@value \
-CurrentOption =\@nil }\@unusedoptionlist \@unusedoptionlist \csname ds@\detoken
-ize \expandafter {\CurrentOption }\endcsname 
+\@use@ption ->\@expandtwoargs \@removeelement \CurrentOption \@unusedoptionlist
+ \@unusedoptionlist \csname ds@\CurrentOption \endcsname 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\@removeelement 
-#2<-\expandafter \@remove@eq@value \CurrentOption =\@nil 
+#2<-\CurrentOption 
 #3<-\@unusedoptionlist 
-
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
 
 \CurrentOption ->techrep
 
-\@remove@eq@value #1=#2\@nil ->#1
-#1<-techrep
-#2<-
-
 \@unusedoptionlist ->
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\@removeelement {techrep}{}
 
@@ -1605,21 +1397,15 @@ leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->noauthor
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,noauthor,}{,submit,techrep,}
 
@@ -1648,21 +1434,15 @@ leqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->system
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,system,}{,submit,techrep,}
 
@@ -1691,21 +1471,15 @@ nbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->Express
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,Express,}{,submit,techrep,}
 
@@ -1734,21 +1508,15 @@ blejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->Practice
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,Practice,}{,submit,techrep,}
 
@@ -1777,21 +1545,15 @@ final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->Content
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,Content,}{,submit,techrep,}
 
@@ -1820,21 +1582,15 @@ l,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->TCE
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,TCE,}{,submit,techrep,}
 
@@ -1863,21 +1619,15 @@ l
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->invitedshort
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,invitedshort,}{,submit,techrep,}
 
@@ -1905,21 +1655,15 @@ ight,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->recommendedshort
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,recommendedshort,}{,submit,techrep,}
 
@@ -1947,21 +1691,15 @@ leqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->recommendedresearch
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,recommendedresearch,}{,submit,techrep,}
 
@@ -1989,21 +1727,15 @@ jfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->recommendedpractice
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,recommendedpractice,}{,submit,techrep,}
 
@@ -2031,21 +1763,15 @@ ge,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->recommendedcontent
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,recommendedcontent,}{,submit,techrep,}
 
@@ -2072,21 +1798,15 @@ epage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->preprint
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,preprint,}{,submit,techrep,}
 
@@ -2113,21 +1833,15 @@ enright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->a4paper
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,a4paper,}{,submit,techrep,}
 
@@ -2154,21 +1868,15 @@ openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->a5paper
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,a5paper,}{,submit,techrep,}
 
@@ -2195,21 +1903,15 @@ leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->b4paper
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,b4paper,}{,submit,techrep,}
 
@@ -2236,21 +1938,15 @@ eqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->b5paper
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,b5paper,}{,submit,techrep,}
 
@@ -2277,21 +1973,15 @@ openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->a4j
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,a4j,}{,submit,techrep,}
 
@@ -2318,21 +2008,15 @@ bib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->a5j
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,a5j,}{,submit,techrep,}
 
@@ -2359,21 +2043,15 @@ disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->b4j
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,b4j,}{,submit,techrep,}
 
@@ -2400,21 +2078,15 @@ blejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->b5j
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,b5j,}{,submit,techrep,}
 
@@ -2441,21 +2113,15 @@ fam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->a4p
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,a4p,}{,submit,techrep,}
 
@@ -2482,21 +2148,15 @@ final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->a5p
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,a5p,}{,submit,techrep,}
 
@@ -2523,21 +2183,15 @@ l,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->b4p
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,b4p,}{,submit,techrep,}
 
@@ -2564,21 +2218,15 @@ nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->b5p
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,b5p,}{,submit,techrep,}
 
@@ -2605,21 +2253,15 @@ age,notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->10pt
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,10pt,}{,submit,techrep,}
 
@@ -2646,21 +2288,15 @@ otitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->11pt
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,11pt,}{,submit,techrep,}
 
@@ -2686,21 +2322,15 @@ epage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->12pt
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,12pt,}{,submit,techrep,}
 
@@ -2726,21 +2356,15 @@ right,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->landscape
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,landscape,}{,submit,techrep,}
 
@@ -2766,21 +2390,15 @@ enany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->mentuke
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,mentuke,}{,submit,techrep,}
 
@@ -2806,21 +2424,15 @@ se \in@true \fi
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->tate
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,tate,}{,submit,techrep,}
 
@@ -2846,21 +2458,15 @@ leqn,openbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->oneside
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,oneside,}{,submit,techrep,}
 
@@ -2886,21 +2492,15 @@ nbib,disablejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->twoside
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,twoside,}{,submit,techrep,}
 
@@ -2926,21 +2526,15 @@ lejfam,final,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->onecolumn
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,onecolumn,}{,submit,techrep,}
 
@@ -2966,21 +2560,15 @@ al,\@nil ,\@nil
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->twocolumn
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,twocolumn,}{,submit,techrep,}
 
@@ -3006,21 +2594,15 @@ se \in@true \fi
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->titlepage
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,titlepage,}{,submit,techrep,}
 
@@ -3045,21 +2627,15 @@ se \in@true \fi
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->notitlepage
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,notitlepage,}{,submit,techrep,}
 
@@ -3084,21 +2660,15 @@ se \in@true \fi
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->openright
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,openright,}{,submit,techrep,}
 
@@ -3123,21 +2693,15 @@ se \in@true \fi
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->openany
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,openany,}{,submit,techrep,}
 
@@ -3162,21 +2726,15 @@ se \in@true \fi
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->leqno
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,leqno,}{,submit,techrep,}
 
@@ -3201,21 +2759,15 @@ se \in@true \fi
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->fleqn
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,fleqn,}{,submit,techrep,}
 
@@ -3240,21 +2792,15 @@ se \in@true \fi
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->openbib
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,openbib,}{,submit,techrep,}
 
@@ -3279,21 +2825,15 @@ se \in@true \fi
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->disablejfam
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,disablejfam,}{,submit,techrep,}
 
@@ -3318,21 +2858,15 @@ se \in@true \fi
 fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\in@ 
 #2<-,\CurrentOption ,
 #3<-,\ifx \@currext \@clsextension \else \@classoptionslist ,\fi \@curroptions 
 ,
 
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
-
 \CurrentOption ->final
 
 \@curroptions ->submit,techrep
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\in@ {,final,}{,submit,techrep,}
 
@@ -3366,18 +2900,17 @@ fin@ \@use@ption \expandafter \let \csname ds@\CurrentOption \endcsname \@empty
  \fi \fi 
 
 \@process@pti@ns ->\@for \CurrentOption :=\@curroptions \do {\@ifundefined {ds@
-\detokenize \expandafter {\CurrentOption }}{\@use@ption \default@ds }\@use@ptio
-n }\@for \CurrentOption :=\@declaredoptions \do {\expandafter \let \csname ds@\
-CurrentOption \endcsname \relax }\let \CurrentOption \@empty \let \@fileswith@p
-ti@ns \@@fileswith@pti@ns \AtEndOfPackage {\expandafter \let \csname unprocesse
-doptions-\@currname .\@currext \endcsname \relax }
+\CurrentOption }{\@use@ption \default@ds }\@use@ption }\@for \CurrentOption :=\
+@declaredoptions \do {\expandafter \let \csname ds@\CurrentOption \endcsname \r
+elax }\let \CurrentOption \@empty \let \@fileswith@pti@ns \@@fileswith@pti@ns \
+AtEndOfPackage {\expandafter \let \csname unprocessedoptions-\@currname .\@curr
+ext \endcsname \relax }
 
 \@for #1:=#2\do #3->\expandafter \def \expandafter \@fortmp \expandafter {#2}\i
 fx \@fortmp \@empty \else \expandafter \@forloop #2,\@nil ,\@nil \@@ #1{#3}\fi 
 #1<-\CurrentOption 
 #2<-\@curroptions 
-#3<-\@ifundefined {ds@\detokenize \expandafter {\CurrentOption }}{\@use@ption \
-default@ds }\@use@ption 
+#3<-\@ifundefined {ds@\CurrentOption }{\@use@ption \default@ds }\@use@ption 
 
 \@curroptions ->submit,techrep
 
@@ -3389,19 +2922,18 @@ default@ds }\@use@ption
 #2<-techrep
 #3<-\@nil ,\@nil 
 #4<-\CurrentOption 
-#5<-\@ifundefined {ds@\detokenize \expandafter {\CurrentOption }}{\@use@ption \
-default@ds }\@use@ption 
+#5<-\@ifundefined {ds@\CurrentOption }{\@use@ption \default@ds }\@use@ption 
 
 \@ifundefined #1->\ifcsname #1\endcsname \@ifundefin@d@i \else \@ifundefin@d@ii
  \fi {#1}
-#1<-ds@\detokenize \expandafter {\CurrentOption }
+#1<-ds@\CurrentOption 
 
 \CurrentOption ->submit
 
 \@ifundefin@d@i #1\fi #2->\fi \expandafter \ifx \csname #2\endcsname \relax \@i
 fundefin@d@ii \fi \@secondoftwo 
 #1<-\else \@ifundefin@d@ii 
-#2<-ds@\detokenize \expandafter {\CurrentOption }
+#2<-ds@\CurrentOption 
 
 \CurrentOption ->submit
 
@@ -3409,28 +2941,17 @@ fundefin@d@ii \fi \@secondoftwo
 #1<-\@use@ption \default@ds 
 #2<-\@use@ption 
 
-\@use@ption ->\@expandtwoargs \@removeelement {\expandafter \@remove@eq@value \
-CurrentOption =\@nil }\@unusedoptionlist \@unusedoptionlist \csname ds@\detoken
-ize \expandafter {\CurrentOption }\endcsname 
+\@use@ption ->\@expandtwoargs \@removeelement \CurrentOption \@unusedoptionlist
+ \@unusedoptionlist \csname ds@\CurrentOption \endcsname 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\@removeelement 
-#2<-\expandafter \@remove@eq@value \CurrentOption =\@nil 
+#2<-\CurrentOption 
 #3<-\@unusedoptionlist 
-
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
 
 \CurrentOption ->submit
 
-\@remove@eq@value #1=#2\@nil ->#1
-#1<-submit
-#2<-
-
 \@unusedoptionlist ->
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\@removeelement {submit}{}
 
@@ -3458,14 +2979,14 @@ ed@a }
 
 \@ifundefined #1->\ifcsname #1\endcsname \@ifundefin@d@i \else \@ifundefin@d@ii
  \fi {#1}
-#1<-ds@\detokenize \expandafter {\CurrentOption }
+#1<-ds@\CurrentOption 
 
 \CurrentOption ->techrep
 
 \@ifundefin@d@i #1\fi #2->\fi \expandafter \ifx \csname #2\endcsname \relax \@i
 fundefin@d@ii \fi \@secondoftwo 
 #1<-\else \@ifundefin@d@ii 
-#2<-ds@\detokenize \expandafter {\CurrentOption }
+#2<-ds@\CurrentOption 
 
 \CurrentOption ->techrep
 
@@ -3473,28 +2994,17 @@ fundefin@d@ii \fi \@secondoftwo
 #1<-\@use@ption \default@ds 
 #2<-\@use@ption 
 
-\@use@ption ->\@expandtwoargs \@removeelement {\expandafter \@remove@eq@value \
-CurrentOption =\@nil }\@unusedoptionlist \@unusedoptionlist \csname ds@\detoken
-ize \expandafter {\CurrentOption }\endcsname 
+\@use@ption ->\@expandtwoargs \@removeelement \CurrentOption \@unusedoptionlist
+ \@unusedoptionlist \csname ds@\CurrentOption \endcsname 
 
-\@expandtwoargs #1#2#3->\protected@edef \reserved@a {\noexpand #1{#2}{#3}}\rese
-rved@a 
+\@expandtwoargs #1#2#3->\edef \reserved@a {\noexpand #1{#2}{#3}}\reserved@a 
 #1<-\@removeelement 
-#2<-\expandafter \@remove@eq@value \CurrentOption =\@nil 
+#2<-\CurrentOption 
 #3<-\@unusedoptionlist 
-
-\protected@edef ->\let \@@protect \protect \let \protect \@unexpandable@protect
- \afterassignment \restore@protect \edef 
 
 \CurrentOption ->techrep
 
-\@remove@eq@value #1=#2\@nil ->#1
-#1<-techrep
-#2<-
-
 \@unusedoptionlist ->
-
-\restore@protect ->\let \protect \@@protect 
 
 \reserved@a ->\@removeelement {techrep}{}
 
@@ -3525,14 +3035,12 @@ ed@a }
 #1<-\@nil 
 #2<-\@nil 
 #3<-\CurrentOption 
-#4<-\@ifundefined {ds@\detokenize \expandafter {\CurrentOption }}{\@use@ption \
-default@ds }\@use@ption 
+#4<-\@ifundefined {ds@\CurrentOption }{\@use@ption \default@ds }\@use@ption 
 
 \@fornoop #1\@@ #2#3->
 #1<-\@nil 
 #2<-\CurrentOption 
-#3<-\@ifundefined {ds@\detokenize \expandafter {\CurrentOption }}{\@use@ption \
-default@ds }\@use@ption 
+#3<-\@ifundefined {ds@\CurrentOption }{\@use@ption \default@ds }\@use@ption 
 
 \@for #1:=#2\do #3->\expandafter \def \expandafter \@fortmp \expandafter {#2}\i
 fx \@fortmp \@empty \else \expandafter \@forloop #2,\@nil ,\@nil \@@ #1{#3}\fi 
@@ -4399,4 +3907,361 @@ al,\@nil ,\@nil
 #2<-notitlepage,openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,
 \@nil 
 #3<-\CurrentOption 
-#4<-\expandafter \let \csname ds@\CurrentOption \endcsna
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->titlepage
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-notitlepage
+#2<-openright,openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->notitlepage
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-openright
+#2<-openany,leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->openright
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-openany
+#2<-leqno,fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->openany
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-leqno
+#2<-fleqn,openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->leqno
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-fleqn
+#2<-openbib,disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->fleqn
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-openbib
+#2<-disablejfam,final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->openbib
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-disablejfam
+#2<-final,\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->disablejfam
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-final
+#2<-\@nil ,\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\CurrentOption ->final
+
+\@iforloop #1,#2\@@ #3#4->\def #3{#1}\ifx #3\@nnil \expandafter \@fornoop \else
+ #4\relax \expandafter \@iforloop \fi #2\@@ #3{#4}
+#1<-\@nil 
+#2<-\@nil 
+#3<-\CurrentOption 
+#4<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\@fornoop #1\@@ #2#3->
+#1<-\@nil 
+#2<-\CurrentOption 
+#3<-\expandafter \let \csname ds@\CurrentOption \endcsname \relax 
+
+\AtEndOfPackage ->\expandafter \g@addto@macro \csname \@currname .\@currext -h@
+@k\endcsname 
+
+\@currname ->ipsj
+
+\@currext ->cls
+
+\g@addto@macro #1#2->\begingroup \toks@ \expandafter {#1#2}\xdef #1{\the \toks@
+ }\endgroup 
+#1<-\ipsj.cls-h@@k 
+#2<-\expandafter \let \csname unprocessedoptions-\@currname .\@currext \endcsna
+me \relax 
+
+\ipsj.cls-h@@k ->
+\h=\dimen154
+\JQ=\dimen155
+\Q=\dimen156
+\@Q=\dimen157
+\ChtE=\skip47
+\CdpE=\skip48
+\CwdE=\skip49
+\CvsE=\skip50
+\normalbaselineskip=\skip51
+\c@volume=\count179
+\c@number=\count180
+\c@month=\count181
+\c@year=\count182
+\author@count=\count183
+\label@count=\count184
+\email@count=\count185
+\affiliate@count=\count186
+\offsetemail=\count187
+\paffiliate@count=\count188
+\shubetutitlesep=\skip52
+\JEhonbunsep=\skip53
+\Etitleauthorsep=\skip54
+\Eauthorreceivesep=\skip55
+\Ereceiveabstsep=\skip56
+\Eabstkeywordsep=\skip57
+\Jtitlejauthorsep=\skip58
+\Jauthorjreceivesep=\skip59
+\Jreceivejabstsep=\skip60
+\Jabstsepjkeyword=\skip61
+\Jkeywordetitle=\skip62
+\Jetitleeauthor=\skip63
+\Jeauthorereceivesep=\skip64
+\Jereceiveeabstsep=\skip65
+\Jeabstekeywordsep=\skip66
+\@abstractbox=\box64
+\@eabstractbox=\box65
+\@jkeywordbox=\box66
+\@ekeywordbox=\box67
+\@keywordbox=\box68
+\c@part=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
+\@tempboxb=\box69
+\SECTwd=\box70
+\section@height=\skip67
+\@abovecapskip=\dimen158
+\@belowcapskip=\dimen159
+\c@figure=\count195
+\c@table=\count196
+\abovecaptionskip=\skip68
+\belowcaptionskip=\skip69
+\@tempboxb=\box71
+\capwidth=\dimen160
+\ecapwidth=\dimen161
+\bibindent=\dimen162
+\c@profile=\count197
+\mathindent=\dimen163
+\@dummyfigbox=\box72
+\twocolcapwidth=\dimen164
+\twocolecapwidth=\dimen165
+\@compare@result=\count198
+ (./ipsjtech.sty
+Document Class: ipsj 2012/06/01 v3.00 IPSJTECH.STY
+))
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/graph
+ics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/graph
+ics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/graph
+ics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/graph
+ics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/graph
+ics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 105.
+
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/graph
+ics-def/dvipdfmx.def
+File: dvipdfmx.def 2021/03/18 v5.0j Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
+)
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/base/
+latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/l3bac
+kend/l3backend-dvips.def
+File: l3backend-dvips.def 2021-05-07 L3 backend support: dvips
+\l__pdf_internal_box=\box73
+\g__pdf_backend_object_int=\count199
+\l__pdf_backend_content_box=\box74
+\l__pdf_backend_model_box=\box75
+\g__pdf_backend_annotation_int=\count266
+\g__pdf_backend_link_int=\count267
+\g__pdf_backend_link_sf_int=\count268
+) (./tech-jsample.aux)
+\openout1 = `tech-jsample.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8.8711> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 43.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8.8711> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 43.
+LaTeX Font Info:    Calculating math sizes for size <8.8711> on input line 46.
+LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <19.2207> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <19.2207> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 70.
+LaTeX Font Info:    Calculating math sizes for size <9.61035> on input line 70.
+
+LaTeX Font Info:    Calculating math sizes for size <11.82813> on input line 70
+.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.22882> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.22882> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `JT1/mc/m/sc' in size <10.34961> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `JY1/mc/m/sc' in size <10.34961> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 70.
+LaTeX Font Info:    Calculating math sizes for size <10.34961> on input line 70
+.
+LaTeX Font Info:    Font shape `JT1/mc/m/sc' in size <7.24469> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `JY1/mc/m/sc' in size <7.24469> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 70.
+LaTeX Font Info:    Calculating math sizes for size <8.13184> on input line 70.
+
+LaTeX Font Info:    Calculating math sizes for size <5.69225> on input line 70.
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <11.82813> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 73.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <11.82813> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 73.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9.61035> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 80.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9.61035> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 80.
+
+(I search kanjifont definition file: . . ) (I search font definition file: . .
+. . . . . )
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
+97.
+
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/txfon
+ts/omstxsy.fd
+File: omstxsy.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for OT1+txsy on input line 
+97.
+LaTeX Font Info:    No file OT1txsy.fd. on input line 97.
+
+
+LaTeX Font Warning: Font shape `OT1/txsy/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 97.
+
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 9
+7.
+
+(/Applications/UpTeX.app/Contents/Resources/TEX/2021/texmf-dist/tex/latex/psnfs
+s/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) [1
+
+
+]
+File: ./images/mail.jpg Graphic file (type bmp)
+<./images/mail.jpg>
+ [2]
+Overfull \hbox (20.41833pt too wide) in paragraph at lines 183--184
+[][]\OT1/cmtt/m/n/8.8711 https://www.ipsj.or.jp/prms/author_pre_submit.do 
+ []
+
+
+Overfull \hbox (1.7893pt too wide) in paragraph at lines 189--191
+[][]\OT1/cmtt/m/n/8.8711 http://www.ipsj.or.jp/journal/submit/manual/
+ []
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <6.7272> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 211.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <6.7272> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 211.
+[3] [4]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8.13184> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 496.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8.13184> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 496.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 552.
+ [5] [6] [7]
+LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <8.8711> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 849.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <8.8711> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 849.
+
+Underfull \hbox (badness 7256) in paragraph at lines 922--925
+[]\JY1/mc/m/n/9.61035 また英文論文作成の際には []\OT1/cmtt/m/n/9.61035 english 
+\JY1/mc/m/n/9.61035 をオ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 922--925
+\JY1/mc/m/n/9.61035 プシ ョンに追加すればよい ． したが って ，
+ []
+
+[8] [9] (./tech-jsample.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1956 strings out of 480545
+ 30435 string characters out of 5890582
+ 337285 words of memory out of 5000000
+ 19718 multiletter control sequences out of 15000+600000
+ 442283 words of font info for 204 fonts, out of 8000000 for 9000
+ 107 hyphenation exceptions out of 8191
+ 55i,11n,62p,379b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on tech-jsample.dvi (9 pages, 70372 bytes).
