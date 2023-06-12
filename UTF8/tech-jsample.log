@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.17)  8 JUN 2023 14:17
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.17)  12 JUN 2023 02:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4123,7 +4123,23 @@ File: l3backend-dvips.def 2021-05-07 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count266
 \g__pdf_backend_link_int=\count267
 \g__pdf_backend_link_sf_int=\count268
-) (./tech-jsample.aux)
+) (./tech-jsample.aux
+
+LaTeX Warning: Label `fig:sample' multiply defined.
+
+
+LaTeX Warning: Label `fig:sample' multiply defined.
+
+
+LaTeX Warning: Label `table:SpeedOfLight' multiply defined.
+
+
+LaTeX Warning: Label `fig:sample' multiply defined.
+
+
+LaTeX Warning: Label `fig:sample' multiply defined.
+
+)
 \openout1 = `tech-jsample.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -4183,9 +4199,8 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9.61035> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 80.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9.61035> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 80.
-
-(I search kanjifont definition file: . . ) (I search font definition file: . .
-. . . . . )
+ (I search kanjifont definition file: . . ) (I search font definition file: .
+. . . . . . )
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
 97.
 
@@ -4213,55 +4228,42 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ]
 File: ./images/mail.jpg Graphic file (type bmp)
 <./images/mail.jpg>
- [2]
-Overfull \hbox (20.41833pt too wide) in paragraph at lines 183--184
-[][]\OT1/cmtt/m/n/8.8711 https://www.ipsj.or.jp/prms/author_pre_submit.do 
- []
-
-
-Overfull \hbox (1.7893pt too wide) in paragraph at lines 189--191
-[][]\OT1/cmtt/m/n/8.8711 http://www.ipsj.or.jp/journal/submit/manual/
- []
-
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <6.7272> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 211.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <6.7272> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 211.
-[3] [4]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8.13184> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 496.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 132.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8.13184> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 496.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 552.
- [5] [6] [7]
-LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <8.8711> not available
-(Font)              Font shape `JT1/mc/m/n' tried instead on input line 849.
-LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <8.8711> not available
-(Font)              Font shape `JY1/mc/m/n' tried instead on input line 849.
-
-Underfull \hbox (badness 7256) in paragraph at lines 922--925
-[]\JY1/mc/m/n/9.61035 また英文論文作成の際には []\OT1/cmtt/m/n/9.61035 english 
-\JY1/mc/m/n/9.61035 をオ
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 132.
+ [2]
+File: ./images/screen_transition.jpg Graphic file (type bmp)
+<./images/screen_transition.jpg>
+File: ./images/manager_screen.jpg Graphic file (type bmp)
+<./images/manager_screen.jpg>
+ [3]
+Overfull \hbox (39.08171pt too wide) in paragraph at lines 276--299
+ [][][][] 
  []
 
+[4] [5]
+File: ./images/all_setting.jpg Graphic file (type bmp)
+<./images/all_setting.jpg>
+File: ./images/pop_imap.jpg Graphic file (type bmp)
+<./images/pop_imap.jpg>
+ [6] [7
 
-Underfull \hbox (badness 10000) in paragraph at lines 922--925
-\JY1/mc/m/n/9.61035 プシ ョンに追加すればよい ． したが って ，
- []
-
-[8] [9] (./tech-jsample.aux)
+] (./tech-jsample.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 1956 strings out of 480545
- 30435 string characters out of 5890582
- 337285 words of memory out of 5000000
- 19718 multiletter control sequences out of 15000+600000
- 442283 words of font info for 204 fonts, out of 8000000 for 9000
+ 1935 strings out of 480545
+ 30495 string characters out of 5890582
+ 340285 words of memory out of 5000000
+ 19695 multiletter control sequences out of 15000+600000
+ 440040 words of font info for 190 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 55i,11n,62p,379b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,62p,452b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tech-jsample.dvi (9 pages, 70372 bytes).
+Output written on tech-jsample.dvi (7 pages, 47192 bytes).

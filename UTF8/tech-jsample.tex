@@ -103,9 +103,6 @@ CSSを使用しなくとも、HTMLには\<center\>や\<font\>タグなどの装�
 そこで HTMLでは文書構造のみを定義して、 スタイルについてはCSSow用いたスタイリングシートで指定することが推奨されている.そうすることで他の閲覧環境に依存せず、HTMLを本来の役割で使用することが可能になった.
 
 
-
-
-
 \subsection{Smarty}
 Smartyとは、2000年代前半にリリースされたスクリプト言語であるPHPのテンプレートエンジンである.
 
@@ -129,945 +126,328 @@ SMTPとはシンプル・メール・トランスファー・プロトコルと�
 
 一方でPOPとはポスト・オフィス・プロトコルと読み、Post Office Protocolがその由来である.こちらもSMTP同様にインターネットなどのTCP / IPネットワークで用いられているプロトコルであるが、SMTPと異なり、メールを受信するための通信プロトコルである.
 
+\begin{figure}[htbp]
+  \centering
+ \includegraphics[width=8cm]{./images/mail.jpg}
+  \caption{メール送受信の図}
+  \label{fig:sample}
+\end{figure}
 
-\includegraphics[width=8cm]{./images/mail.jpg}
 
-メール送受信の仕組みとしては、上記の画像のようになっており、
+
+メール送受信の仕組みとしては、上記の図のようになっており、
 
 \begin{enumerate}
   \item SMTPでメールをサーバーに送信する
   \item SMTPサーバーからPOPサーバーに受信したメールの内容を送信する
   \item  POPサーバーから受け取る側のPCにメールの内容を送信する
   \end{enumerate}
-
 といった流れになっている.
+
+
 \section{システム設計}
 \subsection{システム概要}
+今回の課題で用いたサンプルコードは，必要な場合に応じてクラスを分け，それぞれのクラスの名前に対して見合ったメソッド、変数を追加している.また、作成したしたクラスを継承し、別のファイルでもクラス内のメソッドを使用できるようにしている.そうすることで、一つのファイルに処理を何百行と書く必要がなくなり、システムの保守・管理・運用を容易に行うことが可能になる.
+
+また、今回の会員登録時に用いた入力フォームではパスワードの長さの入力チェック、つまりバリテーションを行うために、PEAEライブラリに実装しているQuickForm2を用いて、それをSmartyと連携させることで実装している.
+
+会員専用画面である、登録後にユーザー一覧画面を表示する際は、ユーザ一覧のデータを見やすいように分割して表示するためにPagerを用いて実装している.
 
 
+\subsection{画面遷移}
+\subsubsection{一般会員}
+\begin{figure}[htbp]
+  \centering
+ \includegraphics[width=8cm]{./images/screen_transition.jpg}
+  \caption{サンプルプログラムの画面遷移の図}
+  \label{fig:sample}
+\end{figure}
 
-情報処理学会論文誌ジャーナルの \LaTeX スタイルファイルを含む論文執筆キッ
-トは
-\begin{quote}
-\small
-\|http://www.ipsj.or.jp/jip/submit/style.html|
-\end{quote}
-からダウンロードすることができる．論文執筆キットは以下のファイルを含んで
-いる．
+図2は今回のサンプルプログラムにおける画面遷移を表したものであり、以下にその詳細を記す.
+
 \begin{enumerate}
-\item \|ipsj.cls      |: 最終原稿用スタイルファイル
-\item \|ipsjdraft.sty |: 投稿用スタイル（査読用）
-\item \|ipsjpref.sty  |: 序文用スタイル
-\item \|jsample.tex   |: 本稿のソースファイル
-\item \|esample.tex   |: 英文サンプルのソースファイル
-\item \|ipsjsort.bst  |: jBibTEX スタイル（著者名順）
-\item \|ipsjunsrt.bst |: jBibTEX スタイル（出現順）
-\item \|bibsample.bib |: 文献リストのサンプル
-\item \|ebibsample.bib|: 英文文献リストのサンプル
-\end{enumerate}
-キットはUnix用，Windows (DOS)用，Macintosh用などが用意されており，著者の
-作業環境に応じたものを選択できるようになっている．また，実行環境としては 
-\LaTeXe を前提としているので，準備されたい．
+  \item ログインを行い、ログイン者専用のページに遷移する
+  \item 1で新規登録をしていない場合は、新規登録画面を押して、新規登録画面に遷移する
+  \item  新規登録画面に必要な項目を入力する
+  \item  登録ボタンを押すと、入力内容の確認画面に遷移する
+  \item  入力した内容に間違いがなかったら、登録確認用のメールを入力されたメールアドレスに送信する
+  \item メールの内容を確認し、本登録が完了できたら登録完了画面に遷移し、新規登録処理を完了する
+  \item  その後、ログイン画面に再度遷移する
+  \item ログイン画面で、新規登録画面で入力したメールアドレスとパスワードを再度入力することで、ログイン者専用のページに遷移する
+  \end{enumerate}
+といった流れになっている.
 
-Microsoft Wordに関しては，投稿されたフォーマットを基に，業者が \LaTeX に
-変換して組版を行うので，あくまでも参考としてしか使わないことを承知して頂
-きたい．
+\subsubsection{管理者}
+\begin{figure}[htbp]
+  \centering
+ \includegraphics[width=8cm]{./images/manager_screen.jpg}
+  \caption{管理者から見た画面遷移の図}
+  \label{fig:sample}
+\end{figure}
 
-%2.2
-\subsection{最終原稿の作成と投稿}
+図3は今回のサンプルプログラムにおける管理者が行える操作を表したものであり、以下にその詳細を記す.
 
-本稿に従って用意した投稿用原稿の \LaTeX ソースからpdfファイルを作成し，
-Adobeのpdf readerで読めることを確認した後，
-\begin{quote}
-\small
-\|https://www.ipsj.or.jp/prms/author_pre_submit.do|
-\end{quote}
-のPRMS (Paper Review Management System)にメールアドレスを登録し，送られ
-たきたメールに従って，指定されたURLから投稿する．投稿の流れについては，
-\begin{quote}
-\small
-\|http://www.ipsj.or.jp/journal/submit/manual/|
-\|manual_j_for_Author.pdf|
-\end{quote}
-を参照されたい．
+\begin{enumerate}
+  \item 管理者専用の画面の新規登録ボタンを押すと図2の新規登録画面に遷移する
+  \item 管理者専用画面の中のの会員一覧の更新ボタンを押すと、登録された会員情報の内容を修正することができる更新画面へ遷移する
+  \item  管理者専用の画面の中の会員一覧に存在する削除ボタンを押すことで、登録された会員情報を削除することができる、削除確認画面に遷移する
+  \end{enumerate}
+といった流れになっている.
 
-なお，情報処理学会論文誌ジャーナルでは，論文の著者が査読者の名前を知るこ
-とがないだけなく，査読者も著者の名前を知らないダブルブラインドの査読を取
-り入れている．このため，投稿版では，原稿に著者名とその所属は表示しないよ
-うにする必要がある．
+\subsection{データベース設計}
+今回作成したサービスでは三つのテーブルが存在する.
+一つ目は、日本の都道府県を閲覧する際に使用されるkenテーブル、二つ目は、名前、メールアドレス、パスワードなど会員情報を管理するためのmemberテーブル、三つ目はメールを用いて本登録を行っていないユーザーを仮登録として保持しておくためのprememberテーブル、これら三つのデータをMariaDB/MySQLを通して行うことでシステムを動かしている.
+
+以下に、それぞれのテーブルについて記述していく.
+
+\subsubsection{kenテーブル}
+\begin{verbatim}
+CREATE TABLE ken (
+    id      SMALLINT,
+    ken     VARCHAR(10),
+    PRIMARY KEY (id)
+);
+\end{verbatim}
+上のSQL文は都道府県のデータを格納するために定義されたテーブルである.
+
+フィールドについて説明すると、idとはカラムを識別するため主キー、kenは都道府県の名前をを格納している.
+
+\subsubsection{memberテーブル}
+\begin{verbatim}
+CREATE TABLE member (
+    id          
+    MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    username   	VARCHAR(50),
+    password   	VARCHAR(128),
+    last_name  	VARCHAR(50),
+    first_name 	VARCHAR(50),
+    birthday   	CHAR(8),
+    ken         SMALLINT,
+    reg_date   	DATETIME,
+    cancel      DATETIME,
+    PRIMARY KEY (id)
+);
+\end{verbatim}
+上のSQL文は本登録されたユーザーのデータを格納するために定義されたテーブルである.
+
+以下、それぞれのフィールドについて説明する
+
+\begin{enumerate}
+  \item idとはカラムを識別するため主キー、またUNSIGNED NOT NULLAUTO\_INCREMENTとは、カラムを追加される時に自動で順番にidフィールドに数字を格納するという意味である.ただし、0は受け付けない.
+  \item usernameフィールドは文字列で定義されていて、カッコ内にある50とは、50バイト分の文字列まで格納できるという意味である.
+ \item usernameフィールドは文字列で定義されていて、カッコ内にある50とは、50バイト分の文字列まで格納できるという意味である.
+  \item passwordフィールドは文字列で定義されていて、カッコ内にある128とは、128バイト分の文字列まで格納できるという意味である.
+   \item last\_nameフィールドは文字列で定義されていて、カッコ内にある50とは、50バイト分の文字列まで格納できるという意味である.
+    \item first\_nameフィールドは文字列で定義されていて、カッコ内にある50とは、50バイト分の文字列まで格納できるという意味である.また、出身地の情報は都道府県を直接入れているわけではなく、kenテーブルで定義されているidを参照して管理している.こうすることでデータ量の多い都道府県の文字列よりもデータ量の少ない数値で管理できるためサーバーの負荷を軽減することができる.
+
+  \item kenフィールドは数値で定義されていて、SMALLINTとは、-32,767 から 32,767 までの小さい整数を格納することができる意味である.
+ \item reg\_dateフィールドはDARETIME型で定義されていて、YYYY-MM-DD形式で格納されている
+ \item cancelフィールドはDARETIME型で定義されていて、YYYY-MM-DD形式で格納されている  \end{enumerate}
+
+\subsubsection{prememberテーブル}
+\begin{verbatim}
+CREATE TABLE premember (
+    id          
+    MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    username   	VARCHAR(50),
+    password   	VARCHAR(128),
+    last_name  	VARCHAR(50),
+    first_name 	VARCHAR(50),
+    birthday   	CHAR(8),
+    ken         SMALLINT,
+    link_pass  	VARCHAR(128),
+    reg_date   	DATETIME,
+    PRIMARY KEY (id)
+);
+\end{verbatim}
+上のSQL文は仮登録されたユーザーのデータを格納するために定義されたテーブルである.
+
+基本的なフィールドはmemberテーブルとあまり差異はないが、一部異なる部分もある.link\_passフィールドである.このフィールドは本登録テーブルと仮登録テーブルの情報を結びつけるためのフィールドである.
 
 %2.3
-\subsection{最終原稿の作成とファイルの送付}
-
-投稿した論文の採録が決定したら，査読者からのコメントなどにしたがって原稿
-を修正し，著者紹介など投稿時になかった項目があれば追加する．また図表など
-のレイアウトも最終的なものとする．なお後の校正の手間を最小にするために，
-この段階で記述の誤りなどを完全に除去するように綿密にチェックして頂きたい．
-
-最終版では，著者名およびその所属を表示すると同時に，学会より指示された巻
-数，号数，先頭ページ番号，受付／採録年月日（年は西暦）を記述する．なお学
-会からの指示がない項目に関しては，記述しなくてよい．
-
-学会へは{\bf \LaTeX ファイル（をまとめたもの）とハードコピーの双方を}送
-付する．送付するファイル群の標準的な構成は \|.tex| と \|.bbl| であり，こ
-の他にPostScriptファイルや特別なスタイルファイルがあれば付加する．なお 
-\|.tex| は印刷業者が修正することがあるので，{必ず一つのファイルにする}．
-また必要なファイルが全てそろっていること，特に特別なスタイルファイルに洩
-れがないことを，注意深く確認して頂きたい．
-
-ファイルの送付方法などについては，採録通知とともに学会事務局から送られる
-指示に従う．
-
-%2.4
-\subsection{著者校正・組版・出版}
-
-学会では用語や用字を一定の基準に従って修正することがある．また \LaTeX の
-実行環境の差異などによって著者が作成したハードコピーと実際の組版結果が微
-妙に異なることがある．これらの修正や差異が問題ないかを最終的に確認するた
-めに，著者にゲラ刷りが送られるので，もし問題があれば朱書によって指摘して
-返送する．なお{\bf この段階での記述誤りの修正は原則として認められない}の
-で，原稿送付時に細心の注意を払っていただきたい．
-
-その後，著者の校正に基づき最終的な組版を行ない，オンライン出版する．
-
-
-
-%3
-\section{論文フォーマットの指針}
-\label{sec:format}
-
-以下，情報処理学会論文誌ジャーナル用スタイルファイルを用いた論文フォーマッ
-トの指針について述べるので，これに従って原稿を用意頂きたい．\LaTeX を用
-いた一般的な文章作成技術については，\cite{okumura, companion} 等を参考に
-されたい．
-
-%4
-\section{論文の構成}
-\label{config}
-
-ファイルは次のようになる．下線部は投稿時に省略可能なもの．またトランザク
-ション特有コマンドについては \ref{sig}~節を参照されたい．
-
-\noindent
-\|\documentclass[submit]{ipsj}|または\\
-\|\documentclass[submit,draft]{ipsj}|\footnote{{\tt [draft]}は投稿用，
-スタイルオプションは\ref{option}節参照．}
-\\
-\quad 必要ならばオプションのスタイルを追加\\
-\Underline{\|\setcounter{|{\bf 巻数}\|}{<巻数>}|}\\
-\Underline{\|\setcounter{|{\bf 号数}\|}{<号数>}|}\\
-\Underline{\|\setcounter{|{\bf page}\|}{<先頭ページ>}|}\\
-\Underline{\|\|{\bf 受付}\|{<年>}{<月>}{<日>}|}\\
-\Underline{\|\|{\bf 採録}\|{<年>}{<月>}{<日>}|}\\
-\quad 必要ならばユーザのマクロをここに記述\\
-\|\begin{document}|\\
-\|\title{表題(和文)}|\\
-\|\etitle{表題(英文)}|\\
-\Underline{\|\affiliate{所属ラベル}{<和文所属>\\<英文所属>}|}\\
-\quad 必要ならば \|\paffiliate| により現在の所属を宣言する\\
-\Underline{\|\paffiliate{現所属ラベル}{<和現所属>\\<英現所属>}|}\\\\
-\Underline{\|\author{情報 太郎}{Taro Joho}|}\\
-\Underline{\|          {<所属ラベル>}[E-mail]|}\\
-\Underline{\|\author{処理 花子}{Hanako Shori}|}\\
-\Underline{\|          {<所属ラベル2,現所属ラベル3>}|}\\\\
-\|\begin{abstract}|\\
-\|<概要（和文）>|\\
-\|\end{abstract}|\\
-\|\begin{jkeyword}|\\
-\|<キーワード>|\\
-\|\end{jkeyword}|\\
-\|\begin{eabstract}|\\
-\|<概要（英文）>|\\
-\|\end{eabstract}|
-\|\begin{ekeyword}|\\
-\|<KeyWords>|\\
-\|\end{ekeyword}|\\
-\|\maketitle|\\
-\|\section{|第1節の表題\|}|\\
-\dots\dots\dots\dots\dots\\
-\quad \|<本文>|\\
-\dots\dots\dots\dots\dots\\
-謝辞がある場合は\\
-\|\begin{acknowledgment}|\\
-\|\end{acknowledgment}|\\\\
-\|\begin{thebibliography}{99}%9 or 99|\\
-\|\bibitem{1}|\\
-\|\bibitem{2}|\\
-\|\end{thebibliography}|\\\\
-付録がある場合は\\
-\|\appendix|\\
-\|\section{|付録1節の表題\|}|\\\\
-\Underline{\|\begin{biography}|}\\
-\Underline{\|\profile{<X>}{<苗字 名前>}{<プロフィール文章>}|}\\
-\Underline{\|\end{biography}|}\\
-\|\end{document}|
-
-
-%4.1
-\subsection{オプション・スタイル}
-
-\label{option} \|\documentclass{ipsj}|のオプション\footnote{研究会用のオ
-プションは \ref{sig}~節で説明する．}として，以下のものを用意してある．
-{\bf 何も定義しなければ和文論文用の標準スタイル}となるが，今回，組版の際
-に和文論文のタイトル，和文論文種別に「{\bf 太ミン}」「{\bf 太ゴ}」のフォ
-ントを使用しているため，\TeX 標準フォントに置き換える \|submit| というオ
-プションを用意した．
-
-\begin{enumerate}
-\item\|submit         | フォント置換用
-\item\|draft          | 投稿用
-\item\|invited        | 招待論文
-\item\|sigrecommended | 推薦論文
-\item\|technote       | テクニカルノート用
-\item\|preface        | 序文用
-\item\|JIP            | 英文用
-\end{enumerate}
-これらのオプションは任意の組合せで使用が可能である．
-
-\|\documentclass[submit,draft]{ipsj}|とすれば，
-投稿用のスタイルとなる．
-
-なお，\|\usepackage| で補助的なスタイルファイルを指定した場合には，最終
-原稿用のファイル群に必ずスタイルファイルを含める．ただし，\LaTeXe の標準
-配布に含まれているもの（たとえば \|graphicx|）については同封の必要はない．
-
-スタイルファイルによっては論文誌スタイルと矛盾するようなものもあるので，
-注意して使用して頂きたい．
-
-%4.2
-\subsection{表題・著者名等}
-
-表題，著者名とその所属，および概要を前述のコマンドや環境により{\bf 和文と
-英文の双方について}定義した後，\|\maketitle| によって出力する．
-
-%4.2.1
-\subsubsection{表題} 
-
-表題は，\|\title| および \|\etitle| で定義した表題はセンタリングされる．
-文字数の多いものについては，適宜 \|\\| を挿入して改行する．
-
-%4.2.2
-\subsubsection{著者名・所属} 
-
-各著者の所属を第一著者から順に \|\affiliate| を用いてラベル（第1引数）を
-付けながら定義すると，脚注に番号を付けて所属が出力される．なお，複数の著
-者が同じ所属である場合には，一度定義するだけで良い．
-
-
-\subsubsection{概要} 
-
-%4.2.4
-\subsubsection{キーワード} 
-
-%4.3
-\subsection{本文}
-
-%4.3.1
-\subsubsection{見出し}
-
-節や小節の見出しには \|\section|, \|\subsection|, \|\subsubsection|,
-\|\paragraph| といったコマンドを使用する．
-
-\<「定義」，「定理」などについては，\|\newtheorem|で適宜環境を宣言し，そ
-の環境を用いて記述する．
-
-%4.3.2
-\subsubsection{行送り}
-
-2段組を採用しており，左右の段で行の基準線の位置が一致することを原則とし
-ている．また，節見出しなど，行の間隔を他よりたくさんとった方が読みやすい
-場所では，この原則を守るようにスタイルファイルが自動的にスペースを挿入す
-る．したがって本文中では \|\vspace| や \|\vskip| を用いたスペースの調整
-を行なわないようにすること．
-
-%4.3.3
-\subsubsection{フォントサイズ}
-
-フォントサイズは，スタイルファイルによって自動的に設定されるため，基本的
-には著者が自分でフォントサイズを変更する必要はない．
-
-%4.3.4
-\subsubsection{句読点}
-
-句点には全角の「．」，読点には全角の「，」を用いる．ただし英文中や数式中
-で「.」や「,」を使う場合には，半角文字を使う．「。」や「、」は使わない．
-
-%4.3.5
-\subsubsection{全角文字と半角文字}
-
-全角文字と半角文字の両方にある文字は次のように使い分ける．
-
-\begin{enumerate}
-\item 括弧は全角の「（」と「）」を用いる．但し，英文の概要，図表見出し，
-書誌データでは半角の「(」と「)」を用いる．
-
-\item 英数字，空白，記号類は半角文字を用いる．ただし，句読点に関しては，
-前項で述べたような例外がある．
-
-\item カタカナは全角文字を用いる．
-
-\item 引用符では開きと閉じを区別する．
-開きには \|``| を用い，閉じには\|''| を用いる．
-\end{enumerate}
-
-%4.3.6
-\subsubsection{箇条書}
-
-箇条書に関する形式を特に定めていない．場合に応じて標準的な \|enumerate|,
-\|itemize|, \|description| の環境を用いてよい．
-
-
-%4.3.7
-\subsubsection{脚注}
-
-脚注は \|\footnote| コマンドを使って書くと，ページ単位に\footnote{脚注の
-例．}や\footnote{二つめの脚注．}のような参照記号とともに脚注が生成される．
-なお，ページ内に複数の脚注がある場合，参照記号は \LaTeX を2回実行しない
-と正しくならないことに注意されたい．
-
-また場合によっては，脚注をつけた位置と脚注本体とを別の段に置く方がよいこ
-ともある．この場合には，\|\footnotemark| コマンドや \|\footnotetext| コ
-マンドを使って対処していただきたい．
-
-なお，脚注番号は論文内で通し番号で出力される．
-
-%4.3.8
-\subsubsection{OverfullとUnderfull}
-
-組版時にはoverfullを起こさないことを原則としている．従って，まず提出する
-ソースが著者の環境でoverfullを起こさないように，文章を工夫するなどの最善
-の努力を払っていただきたい．但し，\|flushleft| 環境，\|\\|，
-\|\linebreak| などによる両端揃えをしない形でのoverfullの回避は，できるだ
-け避けていただきたい．また著者の執筆時点では発生しないoverfullが，組版時
-の環境では発生することもある．このような事態をできるだけ回避するために，
-文中の長い数式や \|\verb| を避ける，パラグラフの先頭付近では長い英単語を
-使用しない，などの注意を払うようにして頂きたい．
-
-%4.4
-\subsection{数式}\label{sec:Item}
-
-%4.4.1
-\subsubsection{本文中の数式}
-
-本文中の数式は \|$| と \|$|, \|\(| と \|\)|, あるいは \|math| 環境のいず
-れで囲んでもよい．
-
-%4.4.2
-\subsubsection{別組の数式}
-
-別組数式(displayed math)については \|$$| と \|$$| は使用せずに，\|\[| と 
-\|\]| で囲むか，\|displaymath|, \|equation|, \|eqnarray| のいずれかの環
-境を用いる．これらは
-%
-\begin{equation}
-\Delta_l = \sum_{i=l|1}^L\delta_{pi}
-\end{equation}
-%
-のように，センタリングではなく固定字下げで数式を出力し，かつ背が高い数式
-による行送りの乱れを吸収する機能がある．
-
-%4.4.3
-\subsubsection{eqnarray環境}
-
-互いに関連する別組の数式が2行以上連続して現れる場合には，単に\|\[| と 
-\|\]|，あるいは \|\begin{equation}| と\|\end{equation}| で囲った数式を書
-き並べるのではなく，\|\begin|\allowbreak\|{eqnarray}| と 
-\|\end{eqnarray}| を使って，等号（あるいは不等号）の位置で縦揃えを行なっ
-た方が読みやすい．
-
-%4.4.4
-\subsubsection{数式のフォント}
-
-\LaTeX が標準的にサポートしているもの以外の特殊な数式用フォントは，でき
-るだけ使わないようにされたい．どうしても使用しなければならない場合には，
-その旨申し出て頂くとともに，組版工程に深く関与して頂くこともあることに留
-意されたい．
-
-\begin{figure}[tb]
-\setbox0\vbox{
-\hbox{\|\begin{figure}[tb]|}
-\hbox{\quad \|<|図本体の指定\|>|}
-\hbox{\|\caption{<|和文見出し\|>}|}
-\hbox{\|\ecaption{<|英文見出し\|>}|}
-\hbox{\|\label{| $\ldots$ \|}|}
-\hbox{\|\end{figure}|}
-}
-\centerline{\fbox{\box0}}
-\caption{1段幅の図}
-\ecaption{Single column figure with caption\\
-explicitly broken by $\backslash\backslash$.}
-\label{fig:single}
-\end{figure}
-
-%4.5
-\subsection{図}
-
-1段の幅におさまる図は，\figref{fig:single} の形式で指定する．位置の指定
-に \|h| は使わない．また，図の下に和文と英文の双方の見出しを，
-\|\caption| と \|\ecaption| で指定する．文字数が多い見出しはは自動的に改
-行して最大幅の行を基準にセンタリングするが，見出しが2行になる場合には適
-宜 \|\\| を挿入して改行したほうが良い結果となることがしばしばある
-（\figref{fig:single} の英文見出しを参照）．図の参照は \|\figref{<|ラベ
-ル\|>}| を用いて行なう．
-
-\begin{figure}[tb]
-\begin{minipage}[t]{0.5\columnwidth}
-\footnotesize
-\setbox0\vbox{
-\hbox{\|\begin{minipage}[t]%|}
-\hbox{\|  {0.5\columnwidth}|}
-\hbox{\|\CaptionType{table}|}
-\hbox{\|\caption{| \ldots \|}|}
-\hbox{\|\ecaption{| \ldots \|}|}
-\hbox{\|\label{| \ldots \|}|}
-\hbox{\|\makebox[\textwidth][c]{%|}
-\hbox{\|\begin{tabular}[t]{lcr}|}
-\hbox{\|\hline\hline|}
-\hbox{\|left&center&right\\\hline|}
-\hbox{\|L1&C1&R1\\|}
-\hbox{\|L2&C2&R2\\\hline|}
-\hbox{\|\end{tabular}}|}
-\hbox{\|\end{minipage}|}}
-\hbox{}
-\centerline{\fbox{\box0}}
-\caption{\protect\tabref*{tab:right} の中身}
-\ecaption{Contents of Table \protect\ref{tab:right}.}
-\label{fig:left}
-\end{minipage}%
-\begin{minipage}[t]{0.5\columnwidth}
-\CaptionType{table}
-\caption{\protect\figref*{fig:left} で作成した表}
-\ecaption{A table built by\\ Fig.\,\protect\ref{fig:left}.}
-\label{tab:right}
-\vskip1mm
-\makebox[\textwidth][c]{\begin{tabular}[t]{lcr}\hline\hline
-left&center&right\\\hline
-L1&C1&R1\\
-L2&C2&R2\\\hline
-\end{tabular}}
-\end{minipage}
-\end{figure}
-
-\begin{figure*}[tb]
-\setbox0\vbox{\large
-\hbox{\|\begin{figure*}[t]|}
-\hbox{\quad \|<|図本体の指定\|>|}
-\hbox{\|\caption{<|和文見出し\|>}|}
-\hbox{\|\ecaption{<|英文見出し\|>}|}
-\hbox{\|\label{| $\ldots$ \|}|}
-\hbox{\|\end{figure*}|}}
-\centerline{\fbox{\hbox to.9\textwidth{\hss\box0\hss}}}
-\caption{2段幅の図}
-\ecaption{Double column figure.}
-\label{fig:double}
-\end{figure*}
-
-
-また紙面スペースの節約のために，1つの \|figure|（または \|table|）環境の
-中に複数の図表を並べて表示したい場合には，\figref{fig:left} と 
-\tabref{tab:right} のように個々の図表と各々の \|\caption|/\|\ecaption| 
-を \|minipage| 環境に入れることで実現できる．なお図と表が混在する場合，
-\|minipage| 環境の中で\|\CaptionType{figure}| あるいは \|\CaptionType|
-\|{table}| を指定すれば，外側の環境が \|figure| であっても \|table| であっ
-ても指定された見出しが得られる．
-
-2段の幅にまたがる図は，\figref{fig:double} の形式で指定する．
-位置の指定は \|t| しか使えない．
-
-図の中身では本文と違い，どのような大きさのフォントを使用しても構わない
-（\figref{fig:double} 参照）．また図の中身として，encapsulate された
-PostScriptファイル（いわゆるEPSファイル）を読み込むこともできる．読み込
-みのためには，プリアンブルで
-%
-\begin{quote}
-\|\usepackage{graphicx}|
-\end{quote}
-%
-を行った上で，\|\includegraphics| コマンドを図を埋め込む箇所に置き，その
-引数にファイル名（など）を指定する．
-
-%4.6
-\subsection{表}
-
-表の罫線はなるべく少なくするのが，仕上がりをすっきりさせるコツである．罫
-線をつける場合には，一番上の罫線には二重線を使い，左右の端には縦の罫線を
-つけない （\tabref{tab:example}）．表中のフォントサイズのデフォルトは
-\|\footnotesize|である．
-
-また，表の上に和文と英文の双方の見出しを， \|\caption|と \|\ecaption| で
-指定する．表の参照は \|\tabref{<|ラベル\|>}| を用いて行なう．
-
-\begin{table}[tb] 
-\caption{表の例} 
-\ecaption{An Example of Table.}
-\label{tab:example}
-\hbox to\hsize{\hfil
-\begin{tabular}{l|lll}\hline\hline
-& column1 & column2 & column3 \\\hline
-row1 &	item 1,1 & item 2,1 & ---\\
-row2 &	---      & item 2,2 & item 3,2 \\
-row3 &	item 1,3 & item 2,3 & item 3,3 \\
-row4 &	item 1,4 & item 2,4 & item 3,4 \\\hline
-\end{tabular}\hfil}
+\subsection{システム詳細}
+
+
+
+\begin{table}[h]
+ \caption{各処理における分岐の表}
+ \label{table:SpeedOfLight}
+ \centering
+  \begin{tabular}{lllll}
+   \hline
+   type & action & ボタン & 処理 & 表示画面 \\
+   \hline \hline
+   無し &&& 認証 & 会員画面TOP \\
+   無し &&& 未認証 & ログイン画面 \\
+   authenticate & - & - & 認証処理OK & 会員画面TOP \\
+   authenticate & - & - & 認証処理NG & ログイン画面 \\
+   regist & form & - & - & 入力画面 \\
+   regist & confirm & - & 入力チェックOK & 確認画面 \\
+   regist & confirm & - & 入力チェックNG & 入力画面 \\
+   regist & complete & 戻る & - & 入力画面 \\
+   regist & complete & 登録 & INSERT & 完了画面 \\
+   modify & form & - & - & 入力画面 \\
+   modify & confirm & - & 入力チェックOK & 確認画面 \\
+   modify & confirm & - & 入力チェックNG & 入力画面 \\
+   modify & complete & 戻る & - & 入力画面 \\
+   modify & complete & 登録 & UPDATE & 完了画面 \\
+   delete & confirm & - & - & 入力画面 \\
+   delete & complete & - & DELETE & 完了画面 \\
+   modify & - & - & ログアウト処理 & ログイン画面 \\
+   \hline
+  \end{tabular}
 \end{table}
 
+表2は，typeとactionの値によって，振り分けられるときの条件を表したものである.次の画面へ遷移されるときリンクをクリックして画面を表示させるときか、送信ボタンを押して画面を表示させるときのいずれかである. 送信ボタンを押して、画面遷移する場合は、HTTPのGETメソッドにより、パラメーターをURLに載せて、サーバに送信している.送信ボタンを押して画面遷移する場合は、HTTP の POST メソッドを用いて、ユーザーからは確認できないよう安全に値が送信される.
 
+ここで、GETメソッドとPOSTメソッドの違いについて説明する.
 
+GETメソッドはURLにパラメータを含めることで、サーバーに情報を送るHTTPリクエストの一つである.主に、あるページを取得するためにサーバーにリクエストを送る際にこのメソッドが用いられる.
 
-%4.7
-\subsection{参考文献・謝辞}
-
-%4.7.1
-\subsubsection{参考文献の参照}
-
-本文中で参考文献を参照する場合には%，%参考文献番号が文中の単語として使われ
-%る場合と，そうでない参照とでは，使用する文字の大きさが異なる．前者は
-%\|\Cite|により参照し，後者は
-%\|\cite|により参照する．たとえば；
-\|\cite|を使用する．参照されたラベルは自動的にソートされ，
-\|[]|でそれぞれ区切られる．
-%
-\begin{quote}
-文献 \|\cite{companion,okumura}| は \LaTeX の総合的な解説書である．
-\end{quote}
-%
-と書くと；
-%
-\begin{quote}
-文献\cite{companion,okumura}は \LaTeX の総合的な解説書である．
-\end{quote}
-%
-が得られる．
-
-%4.7.2
-\subsubsection{参考文献リスト}
-参考文献リストには，
-原則として本文中で引用した文献のみを列挙する．
-順序は参照順あるいは第一著者の苗字のアルファベット順とする．
-文献リストはBiB\TeX と\verb+ipsjunsrt.bst+（参照順）
-または\verb+ipsjsort.bst+（アルファベット順）を用いて作り，
-\verb+\bibliograhpystyle+と\verb+\bibliography+コマンドにより
-利用することが出来る．
-これらを用いれば，
-規定の体裁にあったものができるので，
-できるだけ利用していただきたい．
-また製版用のファイル群には\verb+.bib+ファイルではなく\verb+.bbl+ファイルを
-必ず含めることに注意されたい．
-一方，何らかの理由でthebibliography環境で文献リストを
-「手作り」しなければならない場合は，
-このガイドの参考文献リストを注意深く見て，
-そのスタイルにしたがっていただきたい．
-
-
-
-
-%4.7.3
-\subsubsection{謝辞}
-
-謝辞がある場合には，参考文献リストの直前に置き，\|acknowledgment|環境の
-中に入れる．この環境の中身は投稿時には出力されない．
-
-%4.8
-\subsection{著者紹介}
-
-本文の最後（\|\end{document}| の直前）に，以下のように著者紹介を記述する．
-
-\begin{quote}
-\|\begin{biography}|\\
-\|\profile{m}{<|第一著者名\|>}{|第一著者の紹介\|}|\\
-\|\profile{m}{<|第二著者名\|>}{|第二著者の紹介\|}|\\
-\|\profile{m}{<|$\dots$\|>}{|$ldots$\|}|\\
-\|\end{biography}|
-\end{quote}
-
-なお最初の引数を変えることで，会員種別が変わる．学生会員の場合は\|s|，フェ
-ローの場合は\|f|，非会員の場合は\|n|を入れる．
-\begin{quote}
-\|\profile{n}{<|第一著者名\|>}{|第一著者の紹介\|}|
-\end{quote}
-なお著者紹介は投稿時には出力されない．
-
-%5
-\section{論文内容に関する指針}
-
-論文の内容について，論文誌ジャーナル編集委員会で作成した「べからず集」を
-以下に示す．投稿前のチェックリストとして利用頂きたい．これ以外にも，査読
-者用，メタ査読者用の「べからず集」\cite{webpage2}も公開しているので，参
-照されたい．また，作文技術に関する \cite{book1, book2, book3, book4}のよ
-うな書籍も参考になる．
-
-%5.1
-\subsection{書き方の基本}
-
-\begin{itemize}
- \item[$\Box$] 研究の新規性，有用性，信頼性が読者に伝わるように記述する．
- \item[$\Box$] 読み手に，読みやすい文章を心がける（内容が前後する，背景・
-	       課題の設定が不明瞭などは読者にとって負担）．
- \item[$\Box$] 解決すべき問題が汎用化（一般的に記述）されていないのは再
-	       考を要する（XX大学の問題という記述に終始）．あるいは，
-	       （単に「作りました」だけで）解決すべき問題そのものの記述
-	       がないのは再考を要する．
- \item[$\Box$] 結論が明確に記されていない，または，範囲，限界，問題点な
-	       どの指摘が適切ではない，または，結論が内容にそったもので
-	       はないものは再考を要する．
- \item[$\Box$] 科学技術論文として不適当な表現や，分かりにくい表現がある
-	       のは再考を要する．
- \item[$\Box$] 極端な口語体や，長文の連続などは再考を要する．
- \item[$\Box$] 章，節のたて方，全体の構成等が適切でない文章は再考を要す
-	       る．
- \item[$\Box$] 文中の文脈から推測しないと内容の把握が困難な論文にしない．
- \item[$\Box$] 説明に飛躍した点があり，仮説等の説明が十分ではないのは再
-	       考を要する．
- \item[$\Box$] 説明に冗長な点，逆に簡単すぎる点があるのは再考を要する．
- \item[$\Box$] 未定義語を減らす．
-\end{itemize}
-
-
-%5.2
-\subsection{新規性と有効性を明確に示す}
-
-\begin{itemize}
- \item[$\Box$] 在来研究との関連，研究の動機，ねらい等が明確に説明されて
-	       いないのは再考を要する．
- \item[$\Box$] 既知／公知の技術が何であって，何を新しいアイデアとして提
-	       案しているのかが書かれていないのは再考を要する．
- \item[$\Box$] 十分な参考文献は新規性の主張に欠かせない．
- \item[$\Box$] 提案内容の説明が，概念的または抽象的な水準に終始していて，
-	       読者が提案内容を理解できない（それだけで新規性が感じられ
-	       ないもの）のは再考を要する．
- \item[$\Box$] 論文で提案した方法の有効性の主張がない，またはきわめて貧
-	       弱なのは再考を要する．
-\end{itemize}
-
-%5.3
-\subsection{書き方に関する具体的な注意}
-
-\begin{itemize}
- \item[$\Box$] 和文標題が内容を適切に表現していないのは再考を要する．
- \item[$\Box$] 英文標題が内容を適切に表現していない，または英語として適
-	       切でないのは再考を要する．
- \item[$\Box$] アブストラクトが主旨を適切に表現していない，または英文が
-	       適切ではないのは再考を要する．
- \item[$\Box$] 記号・略号等が周知のものでなく，または，用語が適切でなく，
-	       または，図・表の説明が適当ではないのは再考を要する．
- \item[$\Box$] 個人的あるいは非常に小さなグループ／企業だけで通用するよ
-	       うな用語が特別な説明もなしに多用されているのは再考を要す
-	       る．
- \item[$\Box$] 図表自体は十分に明確ではない，または誤りがあるのは再考を
-	       要する．
- \item[$\Box$] 図表が鮮明ではないのは再考を要する．
- \item[$\Box$] 図表が大きさ，縮尺の指定が適切でないのは再考を要する.
-\end{itemize}
-
-%5.4
-\subsection{参考文献}
-
-\begin{itemize}
- \item[$\Box$] 参考文献は10件以上必要（分野によっては20件以上，30件以上
-	       という意見もある）.
- \item[$\Box$] 十分な参考文献は新規性の主張に欠かせない．
- \item[$\Box$] 適切な文献が引用されておらず，その数も適切ではないのは再
-	       考を要する．
- \item[$\Box$] 日本人によるしかるべき論文を引用することで日本人研究コミュ
-	       ニティの発展につながる．
- \item[$\Box$] 参考文献は自分のものばかりではだめ．
-\end{itemize}
-
-%5.5
-\subsection{二重投稿}
-
-\begin{itemize}
- \item[$\Box$] 二重投稿はしてはならない ─ ただし国際会議に採択された論
-	       文を著作権が問題にならないように投稿することは構わない．
- \item[$\Box$] 他の論文とまったく同じ図表を引用の明示なしに利用すること
-	       は禁止．
- \item[$\Box$] 既発表の論文等との間に重複があるのは再考を要する．
-\end{itemize}
-
-%5.6
-\subsection{他の人に読んでもらう}
-
-\begin{itemize}
- \item[$\Box$] 投稿経験が少ない人は，採録された経験の豊富な人に校正して
-	       もらう．
- \item[$\Box$] 読者の立場から見て論理的な飛躍がないかに注意して記述する．
-\end{itemize}
-
-%5.7
-\subsection{その他}
-
-\begin{itemize}
- \item[$\Box$] 条件付採録後の修正で，採録条件以外を理由もなく修正するこ
-	       とは禁止．
- \item[$\Box$] ダブルブラインドなので査読者は選べない．
- \item[$\Box$] 投稿前にチェックリストの各項目を満たしているか，必ず確認
-	       する． 
-\end{itemize}
-
-%6
-\section{おわりに}
-
-本稿では，A4縦型2段組み用に変更したスタイルファイルを用いた論文のフォー
-マット方法と，論文誌ジャーナル編集委員会がまとめた「べからず集」に基づく
-論文の書き方を示した．内容的にまだ不十分の部分が多いため，意見，要望等を
-\begin{quote}
- \|editt@ipsj.or.jp|
-\end{quote}
-までお寄せ頂きたい．
-
-
-
-\begin{acknowledgment}
-A4横型に対するガイドを基に，本稿を作成した．
-クラスファイルの作成においては，
-京都大学の中島　浩氏にさまざまなご教示を頂き，
-さらにBiB\TeX 関連ファイルの利用についても快諾頂いたことを深謝する．
-また，A4横型に対するガイドを作成された当時の編集委員会の担当者に深謝する．
-\end{acknowledgment}
-
-
-
-\begin{thebibliography}{10}
-
-%\bibitem{latex}
-%Lamport, L.: {\em A Document Preparation System \LaTeX User's Guide \&
-%  Reference Manual}, Addison Wesley, Reading, Massachusetts (1986).
-% （Cooke, E., et al.訳：文書処理システム \LaTeX，アスキー出版局
-%  (1990)）.
-
-%\bibitem{total}
-%伊藤和人： \LaTeX トータルガイド，秀和システムトレーディング (1991).
-%\bibitem{nodera}
-%野寺隆志：楽々 \LaTeX，共立出版 (1990).
-
-\bibitem{okumura}
-奥村晴彦：改訂第5版 \LaTeXe 美文書作成入門，
-技術評論社(2010).
-
-\bibitem{companion}
-Goossens, M., Mittelbach, F. and Samarin, A.:
-{\it The LaTeX Companion},
-Addison Wesley, Reading, Massachusetts (1993).
-
-\bibitem{book1}
-木下是雄：
-理科系の作文技術，
-中公新書(1981).
-
-\bibitem{book2}
-Strunk W. J. and White E.B.:
-{\it The Elements of Style, Forth Edition},
-Longman (2000).
-
-\bibitem{book3}
-Blake G. and Bly R.W.:
-{\it The Elements of Technical Writing},
-Longman (1993).
-
-\bibitem{book4}
-Higham N.J.:
-{\it Handbook of Writing for the Mathematical Sciences},
-SIAM (1998).
-
-\bibitem{webpage1}
-情報処理学会論文誌ジャーナル編集委員会：
-投稿者マニュアル(online)，
-\urlj{http://www.ipsj.or.jp/journal /submit/manual/j\_manual.html}
-(2007.04.05).
-
-\bibitem{webpage2}
-情報処理学会論文誌ジャーナル編集委員会：
-べからず集(online)，
-\urlj{http://www.ipsj.or.jp/journal/manual /bekarazu.html}
-(2011.09.15).
-
-\end{thebibliography}
-
-
-
-
-\appendix
-%7
-\section{付録の書き方}
-
-付録がある場合には，参考文献リストの直後にコマンド \|\appendix| に引き続
-いて書く．付録では，\|\section| コマンドが{\bf A.1}，{\bf A.2}などの見出
-しを生成する．
-
-%7.1
-\subsection{見出しの例}
-
-付録の \|\subsetion| ではこのよう見出しになる．
-
-%8
-\section{研究会論文用コマンド}
-\label{sig}
-
-各研究会論文誌（トランザクション）には各々に固有のサブタイトル，略称，通
-番がある．最終原稿では，以下のコマンドを \|\documentclass| の{\bf オプショ
-ン}とすることで，これらの情報を与える．
-
-\begin{itemize}
-\item \|PRO|（プログラミング）
-\item \|TOM|（数理モデル化と応用）
-\item \|TOD|（データベース）
-\item \|ACS|（コンピューティングシステム）
-\item \|CDS|（コンシューマ・デバイス\,\&\,システム）
-\item \|TBIO|（Bioinformatics）\footnote{%
-TBIO, SLDM, CVAは英文論文誌であるので和名はない．}
-\item \|SLDM|（System LSI Design Methodology）\footnotemark[5]
-\item \|CVA|（Computer Vision and Applicaitons）\footnotemark[5]
-\end{itemize}
-
-また英文論文作成の際には \|english| をオプションに追加すればよい．したがっ
-て，\|\documentclass[PRO]{ipsj}| とすれば「プログラミング」の和文用，
-\|\documentclass[PRO,english]| \|{ipsj}| とすれば英文用となる．
-
-また研究会には「号」と連動しない「発行月」があるため，学会あるいは編集委
-員会の指示に基づき，発行月を
-%
-\begin{itemize}\item[]
-\|\setcounter{|{\bf 月数}\|}{<発行月>}|
-\end{itemize}
-%
-によって指定する．
-
-この他，以下の各節で示すように，いくつかの論文誌に固有の機能を実現するた
-めのコマンドなどが用意されている．
-
-%\newpage%%
-
-%9
-\section{各分冊固有コマンド}
-
-各分冊によってそれぞれ細かい仕様が違うため，同じコマンドでも出力結果が異
-なる場合がある．また「再受付」，「再々受付」が入る場合があり，それらは
-
-\noindent
-和文では
-\begin{itemize}\item[]
-\|\|{\bf 再受付}\|{<年>}{<月>}{<日>}|\\
-\|\|{\bf 再再受付}\|{<年>}{<月>}{<日>}|
-\end{itemize}
-英文では
-\begin{itemize}\item[]
-\|\|{\bf rereceived}\|{<年>}{<月>}{<日>}|\\
-\|\|{\bf rerereceived}\|{<年>}{<月>}{<日>}|
-\end{itemize}
-とプリアンブルに追加する．
-
-%9.1
-\subsection{\<「プログラミング（PRO）」固有機能}
-
-\<「論文誌：プログラミング」には論文以外に，プログラミング研究会での研究
-発表の内容梗概が含まれている．この内容梗概は，\|\documentclass|のオプショ
-ンとして\|abstract|を指定する．\ref{config}~節の\|\maketitle|までの内容
-からなるファイル（すなわち本文がないファイル）から生成する．なお\|\|{\bf 
-受付}や\|\|{\bf 採録}は不要であるが，代わりに発表年月日を，
-
-\noindent
-和文では
-\begin{itemize}\item[]
-\|\|{\bf 発表}\|{<年>}{<月>}{<日>}|
-\end{itemize}
-英文では
-\begin{itemize}\item[]
-\|\|{\bf Presents}\|{<年>}{<月>}{<日>}|
-\end{itemize}
-により指定する．
-
-%9.1
-\subsection{\<「データベース（TOD）」固有機能}
-
-\<「論文誌：データベース」の論文の担当編集委員は，
-\begin{itemize}\item[]
-\|\Editor{<氏名>}|
-\end{itemize}
-により指定する．和文では「担当編集委員」，英文では「Editor in Charge:」
-と入る．
-
-またスタイルの変更に伴い，\underline{本文の最後}に入るので，
-\|\end{document}|の前に直接置く．
-
-%9.2
-\subsection{\<「コンシューマ・デバイス\,\&\,システム（CDS）」固有機能}
-
-\<「論文誌：コンシューマ・デバイス\,\&\,システム」では，
-論文の種類によって見出しが変わるため，
-オプションで切替えを行う．
-
-各種別は
-\begin{itemize}
-\item \|systems  |コンシューマ・システム論文\\
-\|         |Paper on Consumer Systems
-
-\item \|services |コンシューマ・サービス論文\\
-\|         |Paper on Consumer Services
-
-\item \|devices  |コンシューマ・デバイス論文\\
-\|         |Paper on Consumer Devices
-
-\item \|research |研究論文\\
-\|         |Research Paper
-\end{itemize}
-となる．
-
-和文のコンシューマ・システム論文なら，\\
-\|\documentclass[CDS,systems]{ipsj}|
-となり，英文原稿なら \|english|を追加すればよい．
-
-%9.3
-\subsection{\<「Bioinformatics（TBIO）」固有機能}
-
-Trans.\ Bioinformatics (TBIO)は英文論文誌であるので，\|TBIO|オプションの
-指定によって自動的に\|english|オプションが指定されたものとみなされ，
-\|english| オプションの省略が可能．
-
-論文種別は以下の3種．
-\begin{itemize}
-\item \makebox[4.9zw][l]{指定なし} Original Paper (Default)
-\item \|Data     | Database/Software Paper
-\item \|Survey   | Survey Paper
-\end{itemize}
-
-\|\documentclass[TBIO]{ipsj}|でOriginal Paper，\\
-\|\documentclass[TBIO,Survey]{ipsj}|でSurvey Paperとなる．
-
-また，担当編集委員はTOD同様，\|\Editor|で定義するが，「Communicated by」
-となる．TOD同様，\|\end{document}|の前に直接置く．
-
-%9.4
-\subsection{\<「Computer Vision and Applicaitons\\\<（CVA）」固有機能}
-
-Trans.\ CVAも英文論文誌であるため，\|english| オプションの省略が可．
-
-論文種別は3種類あり，
-\begin{itemize}
-\item \makebox[4.9zw][l]{指定なし} Regular Paper (Default)
-\item \|Research | Research Paper
-\item \|system   | Systems Paper
-\end{itemize}
-となる．
-
-TBIO同様，担当編集委員が入り，
-挿入文章もTBIO同様，「Communicated by」となる．
-
-%9.5
-\subsection{\<「System LSI Design Methodology（SLDM）」固有機能}
-
-Trans.\ SLDMも英文論文誌であるため，\|english| オプションの省略が可．
-
-論文種別は2種類あり，
-\begin{itemize}
-\item \makebox[4.9zw][l]{指定なし} Regular Paper (Default)
-\item \|Short    | Short Paper
-\end{itemize}
-となる．
-
-SLDMも担当編集委員が入るが挿入文章が論文によって自動挿入文章が異なる．
-
-通常は「Recommended by Associate Editor:」，\|invited|のオプションが入っ
-た場合のみ，「Invited by Editor-in-Chief:」となる．
+POSTメソッドとはパラメータをリクエストヘッダーに含めることで、サーバーとデータのやり取りを行うHTTPリクエストの一つである.GETメソッドと明確に異なる点として、サーバーに送った情報がユーザーには見ることができない点が挙げられる.この特徴によりPOSTメソッドは、主にデータを追加する際、今回のサンプルプログラムだとユーザーの仮登録、本登録をする際、個人情報などといった第三者に見られてはいけない情報を送信する際に用いられる.
+
+メソッドの決め方としては、\$this-\>type の値でメソッドが決まり、メソッドの内部では\$this-\>action の値で処理を振り分けていく.また，送信ボタンが二つある画面では，ボタンの名称を振り分けに利用している.
+
+\subsection{変数設計}
+
+\subsection{各画面設計}
+各画面はQuickForm2、Smarty により、PHPファイルをもとに自動生成されている.
+
+画面描写に必要なファイルはsmatryディレクトリのtemplatesディレクトリ内にある.tplファイルである.これらのファイルを読み込むことで、画面を描写することができる.
+
+\subsubsection{ログイン画面}
+ログイン画面の描写には、login.tplを用いている
+
+index.phpの情報を参照することでセッション管理を行なっていて、ログイン済みであると認証されなかった場合は、このページに遷移するようになっている.
+
+また、入力欄に入力した内容をブラウザ側で保持しつつ出るために、\$form.username.labelには，ユーザー名を格納し、\$form.username.htmlはユーザー名の入力欄、HTMLのコードに置き換わる.同様に、\$form.password.labelはパスワード名に、\$form.password.htmlはパスワー ド入力欄にHTMLのコードに置き換わる.
+
+\subsubsection{仮登録表示画面}
+画面の描写にはpremember.tplが用いられる.
+
+新規登録画面から確認画面でユーザーが登録情報を確認した後に遷移する画面であり、メールを送信した旨を伝えるための画面である.
+
+\subsubsection{会員専用画面}
+画面の描写にはmember\_top.tplが用いられる.
+
+ログインを終えた会員とindex.phpにセッションが残っている場合は子も画面に遷移する.
+
+\subsubsection{管理者専用画面}
+画面の描写にはsystem\_login.tplが用いられる.
+
+管理者用のパスワードを入力し、認証を終えると、このページに遷移する.
+会員一覧へのリンクは\$SCRIPT\_ NAME?type=list\& action=formとなり\$ SCRIPT\_ NAMEはsystem.phpに置き換わる。 クリックするとsystem.phpに対してtype=listとaction=formが送信され、会員一覧を表示する。
+
+\section{実装}
+
+\subsection{実装環境}
+\begin{table}[h]
+ \caption{用いたツール名とそのバージョンの表}
+ \label{table:SpeedOfLight}
+ \centering
+  \begin{tabular}{ll}
+   \hline
+   名前 & バージョン  \\
+   \hline \hline
+  OS & macOS Venture バージョン 13.4 \\
+  XAMPP &  7.4.28 \\
+  PHP & 7.4.28 \\
+
+   \hline
+  \end{tabular}
+\end{table}
+
+今回は以上の表のような環境で動作確認を行なった.
+
+\subsection{環境設定}
+今回のサンプルプログラムを動作させるために必要なXAMPPの環境構築は以下のように行なった.
+
+\begin{enumerate}
+  \item 公式サイトからXAMPPをインストールする
+  \item 設定を行い、XAMPPコントロールパネルを起動させる
+  \item  WebサーバーであるApacheを起動させる
+  \end{enumerate}
+といった流れになっている.
+
+次に実際に今回のシステムを動作させるためのプログラムの配置は以下の手順で行なった
+
+\begin{enumerate}
+  \item 「環境構築から実践的なシステム作成まで完全習得! PHP7+MariaDB/MySQL マスターブック」に記されているサンプルデータにアクセスする
+  \item そこにあるSection77の内容を引用するために、XAMPPディレ クトリにphp\_libsを作成し、htdocsとphp\_libsに引用したサンプルプログラムをすべて移す.
+データの Section77 に入っているすべてのファイルを移す。
+  \item  コピペしたフォルダにあるファイルにアクセス権を付与する
+  \end{enumerate}
+  
+  
+  MySQLの初期設定は以下の手順で行なった.
+\begin{enumerate}
+  \item sqlフォルダを作成する
+  \item サンプルプログラムのSection76、Section86からにあるSQLファイルをコピーして、sqlフォルダに格納する
+  \item MySQLにアクセスし、予め、データベースやテーブル、初期ユーザーをインサートしておく
+  \end{enumerate}
+といった流れになっている.
+
+今回のサンプルプログラムでは、メールを受け取って、本登録を完了する機能が実装されている.そこで、gmailのメール受け取りに関する設定が必要になっため、その手順を以下に記す.
+
+
+\begin{enumerate}
+  \item gmailのWebページにアクセスする
+  \item 右上の歯車のアイコンをクリックする
+  \item 押すと、「全ての設定を表示」という項目が表示されるためそれをクリックする
+  \item 「メール転送とPOP/IMAP」をクリックする
+  \item 「IMAPアクセス」のステータスを「IMAP を有効にする」に変更する
+  \end{enumerate}
+  
+   \begin{figure}[htbp]
+  \centering
+ \includegraphics[width=8cm]{./images/all_setting.jpg}
+  \caption{全ての設定を表示ボタンが表示されている画面の図}
+  \label{fig:sample}
+\end{figure}
+  
+  \begin{figure}[htbp]
+  \centering
+ \includegraphics[width=8cm]{./images/pop_imap.jpg}
+  \caption{IMAPを有効にした時の画面図}
+  \label{fig:sample}
+\end{figure}
+
+以上の手順を踏むと、Gmailのコンソール画面のうちIMAPアクセス」のステータスを「IMAP を有効にする」に変更でき、IMAPサーバーからPOPサーバーにメールの内容を送信できるようになる.
+
+また、本来Smatryを利用する際はインストールするまでに必要な手順を踏む必要があるが、サンプルプログラムを引用することでその必要は無くなったため、説明は省略することにする.
+
+\subsection{動作検証}
+画面遷移の説明の際に用いた図2の手順を踏んで行なった.
+まずは一般会員に関する動作検証を行なった.
+\begin{enumerate}
+  \item ログイン画面では自分の入力した内容がフォームにもそのまま反映されるかを検証した
+  \item 新規登録画面ではログイン画面同様、フォームにもそのまま反映されるかに加えデータベースに格納されている都道府県情報が選択できているかを検証した
+  \item 登録確認画面ではユーザーが新規登録画面で入力した値がprememberテーブルに格納され、表示できているか検証
+  \item メール確認後、本登録が完了した旨を伝える画面が表示されるかを検証
+  \item 再びログイン画面に遷移した時、新規登録で登録したメールアドレス、パスワードでログインを行えるか検証
+   \item 会員専用画面で、登録内容の修正、削除、ログアウトが行えるか検証
+  \item 「IMAPアクセス」のステータスを「IMAP を有効にする」に変更する
+   \item 「メール転送とPOP/IMAP」をクリックする
+  \item 「IMAPアクセス」のステータスを「IMAP を有効にする」に変更する
+  \end{enumerate}
+  
+ 次には管理者に関する動作検証を行なった.
+\begin{enumerate}
+  \item ログイン画面で管理者用のパスワードを入力することで管理者用のページに遷移することができるかを検証した
+  \item 管理者ページから会員一覧ページに遷移できるか検証
+  \item 会員一覧ページでは、会員情報を全て閲覧できるようになっているか、またそれを削除、修正することができるかを検証
+  \item メール確認後、本登録が完了した旨を伝える画面が表示されるかを検証
+  \item 再びログイン画面に遷移した時、新規登録で登録したメールアドレス、パスワードでログインを行えるか検証
+  \end{enumerate}
+  
+  以上のように一般会員、管理者の動作検証を行ったところ、画面遷移や表示内容、処理について全く不具合が確認できなかったため、システムは正常に動作していると判断した.
+  
+\section{まとめ}
+今回のサンプルプログラムではPHPとMySQLを連携させて作る簡単な会員登録アプリを作成した.普段、個人またはチームでアプリ開発に取り組む際は、便利なライブラリに頼ったり、Firebaseに認証機能を任せていたりしているためメール認証で使われるSMTPサーバー、POPサーバーについて深く知ることができたことはとても良い経験になった.
+
+アプリ全体を通して、いつデータベースにアクセスして削除、追加、閲覧を行ったらよいのか、また、セッションとクッキーの管理、バリテーション、メール送信機能が実装されているため、基本的なアプリの流れを知ることができるアプリであった.
+
+また、今回のアプリは新規登録を行なってログインをして、ログイン者専用ページを表示するといったとてもシンプルなものであったが、今後、会員専用ページに機能を拡張していくことでより面白いアプリにすることができる基盤となるアプリであるとも考えた.
 
 
 
