@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.17)  30 JUL 2023 14:40
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.17)  30 JUL 2023 15:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4246,9 +4246,7 @@ Overfull \hbox (22.24084pt too wide) in paragraph at lines 334--334
 
  []
 
-[5] [6] [7
-
-] (./tech-jsample.aux)
+[5] [6] [7] (./tech-jsample.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -4265,4 +4263,4 @@ Here is how much of TeX's memory you used:
  107 hyphenation exceptions out of 8191
  55i,10n,62p,577b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tech-jsample.dvi (7 pages, 47988 bytes).
+Output written on tech-jsample.dvi (7 pages, 50428 bytes).
