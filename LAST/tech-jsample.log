@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.17)  9 JUL 2023 01:41
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2021.5.17)  30 JUL 2023 14:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4128,12 +4128,6 @@ File: l3backend-dvips.def 2021-05-07 L3 backend support: dvips
 LaTeX Warning: Label `fig:sample' multiply defined.
 
 
-LaTeX Warning: Label `table:SpeedOfLight' multiply defined.
-
-
-LaTeX Warning: Label `fig:sample' multiply defined.
-
-
 LaTeX Warning: Label `fig:sample' multiply defined.
 
 )
@@ -4226,26 +4220,33 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: ./images/technical_configuration.jpg Graphic file (type bmp)
 <./images/technical_configuration.jpg>
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8.13184> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 129.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8.13184> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 129.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 134.
  [2]
 File: ./images/screen_transition.jpg Graphic file (type bmp)
 <./images/screen_transition.jpg>
+File: ./images/room_screen.jpg Graphic file (type bmp)
+<./images/room_screen.jpg>
  [3]
-Overfull \hbox (39.08171pt too wide) in paragraph at lines 264--287
- [][][][] 
+Overfull \hbox (37.37698pt too wide) in paragraph at lines 273--273
+[]      \OT1/cmtt/m/n/9.61035 - ./Docker/mysql/init:/docker-entrypoint-initdb.d
+[] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (57.5585pt too wide) in paragraph at lines 286--286
+[]\OT1/cmtt/m/n/9.61035 COPY mysqld_charset.cnf /etc/mysql/conf.d/mysql_charset
+.cnf[] 
+ []
 
 [4]
-File: ./images/all_setting.jpg Graphic file (type bmp)
-<./images/all_setting.jpg>
-File: ./images/pop_imap.jpg Graphic file (type bmp)
-<./images/pop_imap.jpg>
- [5] [6] [7
+Overfull \hbox (22.24084pt too wide) in paragraph at lines 334--334
+[]    \OT1/cmtt/m/n/9.61035 FOREIGN KEY room (room_id) REFERENCES rooms (id)[] 
+
+ []
+
+[5] [6] [7
 
 ] (./tech-jsample.aux)
 
@@ -4256,12 +4257,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1930 strings out of 480545
- 30439 string characters out of 5890582
- 338285 words of memory out of 5000000
- 19691 multiletter control sequences out of 15000+600000
- 440040 words of font info for 190 fonts, out of 8000000 for 9000
+ 1922 strings out of 480545
+ 30277 string characters out of 5890582
+ 335285 words of memory out of 5000000
+ 19685 multiletter control sequences out of 15000+600000
+ 439705 words of font info for 189 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
- 55i,10n,62p,577b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,10n,62p,577b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tech-jsample.dvi (7 pages, 44776 bytes).
+Output written on tech-jsample.dvi (7 pages, 47988 bytes).

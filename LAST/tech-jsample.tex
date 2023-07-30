@@ -115,6 +115,11 @@ GinとはGo言語の中でも人気のあるWebフレームワークである.
 
 Ginには高速なパフォーマンス、JSONのリクエストのバリデーション、ルーティングのグループ化、エラー管理、組み込みのレンダリング、といった特徴があるため、Ginなしで開発するよりもより高速、簡単にWebアプリケーションやAPIサーバーを開発することができる.
 
+\subsection{Docker}
+Dockerとは、Docker社が開発するコンテナ型のアプリケーション実行環境のことである.Dockerを使うことで、1台のサーバー上で様々なアプリケーションを手軽に仮想化・実行できるようになる.
+
+Dockerはコンテナ環境をファイルで設定することができるため、Dockerファイルを共有することで開発環境を揃えることが大変であるチーム開発時に大きな有用性がある.また、一台のサーバーに複数のアプリケーション実行環境を作成することができるため、デプロイのしやすさや、サーバーの節約にも貢献することができる.
+
 \subsubsection{API}
 APIとは「Application Programming Interface」の略である.言葉通りに意味を解釈すると、アプリケーションをプログラミングするためのインターフェースという意味である.簡単に説明すると、APIとはソフトウェアにAPIという外部とやりとりする窓口であり、外部アプリとコミュニケーションや連携ができるものである.
 
@@ -154,6 +159,14 @@ ChakraUIはCSSを記述しなくとも洗練されたデザインのUIコンポ�
   \label{fig:sample}
 \end{figure}
 
+\begin{figure}[htbp]
+  \centering
+ \includegraphics[width=8cm]{./images/room_screen.jpg}
+  \caption{部屋画面の図}
+  \label{fig:sample}
+\end{figure}
+
+
 図2は今回のプログラムにおける画面遷移を表したものであり、以下にその詳細を記す.
 \subsubsection{部屋作成の動き}
 \begin{enumerate}
@@ -168,163 +181,271 @@ ChakraUIはCSSを記述しなくとも洗練されたデザインのUIコンポ�
   \item 部屋に入っている人から「部屋画面」に表示されているQRコードまたはURLを共有してもらう
   \item 「部屋画面」の「参加者を追加する」ボタンを押すと、ドロワーが表示される
   \item  ドロワーにある名前、コメントを入力してから「参加する」ボタンを押す
-
  \end{enumerate}
 といった流れになっている.
 
-
-図3は今回のサンプルプログラムにおける管理者が行える操作を表したものであり、以下にその詳細を記す.
-
+\subsubsection{タグ付の動き}
 \begin{enumerate}
-  \item 管理者専用の画面の新規登録ボタンを押すと図2の新規登録画面に遷移する
-  \item 管理者専用画面の中のの会員一覧の更新ボタンを押すと、登録された会員情報の内容を修正することができる更新画面へ遷移する
-  \item  管理者専用の画面の中の会員一覧に存在する削除ボタンを押すことで、登録された会員情報を削除することができる、削除確認画面に遷移する
-  \end{enumerate}
+  \item 「新しくタグを作る」を押す
+  \item ドロワーが表示される
+  \item ドロワーの「タグ」に作成したいタグ名をつける
+  \item 図3のユーザーカードにある「編集」ボタンを押す
+  \item 押すと「名前」、「コメント」、「タグ」の入力ができるため「タグ」の欄に作成したタグ名を入れる
+ \end{enumerate}
 といった流れになっている.
 
+\subsubsection{参加者削除の動き}
+\begin{enumerate}
+  \item 図3のユーザーカードにある「削除」ボタンを押す
+  \item 確認用のドロワーが表示される
+  \item ドロワーにある「はい」ボタンをクリックする
+ \end{enumerate}
+といった流れになっている.
+
+\subsection{Docker内の処理}
+今回のアプリケーションはバックエンドを全てDockerで行なっている.このセクションではGoとMySQLコンテナについて、docker-compose.ymlとDockerfileを参照しながら説明をする
+\subsubsection{Goコンテナ}
+\begin{verbatim}
+  go:
+    container_name: Database_And_Exercises_Go
+    build:
+      context: ./Docker/go
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    env_file:
+      - ./Docker/go/.env
+    volumes:
+      - ./go:/go/src/app
+    ports:
+      - 8080:8080
+    depends_on:
+      - "mysql"
+\end{verbatim}
+上はdocker-compose.ymlの中でもGoコンテナに関する記述を抜粋したものである.
+以下、それぞれの部分に関する説明を行う.
+\begin{enumerate}
+  \item container\_nameでコンテナの名前を指定する.今回は「Database\_And\_Exercises\_Go」
+  \item buildのcontextにDockerfileのあるパスをdocker-compose.ymlから見たときのパスを入力し、docekrfileに読み込むDockerfileのファイル名を指定する
+  \item  stdin\_openとはコンテナ内のエラーを標準出力として表示するかをbooleanで指定する要素である
+  \item ttyとは擬似端末(キーボードによる入力)をコンテナに結びつける設定である
+  \item  env\_fileで環境変数として読み込むenvファイルのパスを指定している
+  \item volumesで「:」よりも右にあるパス以下のファイル、フォルダを「:」よりも左にあるパス以下に全てコピーする
+  \item  ports
+  でGinサーバーのポート番号を指定する.今回は8080番を指定した
+  \item MySQLコンテナよりも早くGoコンテナが立ち上がっていると実行時にDBに接続ができなくエラーが発生するためdepends\_onでMySQLコンテナが立ち上がってからGoコンテナを立ち上げるようにする
+ \end{enumerate}
+ 
+
+ \begin{verbatim}
+FROM golang:1.19.3-alpine
+RUN apk add --update &&  apk add git
+RUN mkdir /go/src/app
+WORKDIR /go/src/app
+ADD . /go/src/app
+CMD ["go", "run", "./cmd/main.go"]
+ \end{verbatim}
+上のコードはGoコンテナに関するDockerfileである.
+以下、それぞれの部分に関する説明を行う.
+\begin{enumerate}
+  \item FROM以下に取得したいDockerイメージを取得する.今回はGo言語に関するイメージを取得する
+  \item RUNコマンドでビルド時に実行したいコマンドを指定する.今回はgitのインストールとディレクトリを作成した
+  \item  WOEKDIRでコンテナに入って操作するとき、一番最初に指定するパスを指定する
+  \item ADDでコンテナに指定したフォルダやファイルをコピーする
+  \item  env\_fileで環境変数として読み込むenvファイルのパスを指定している
+  \item CMDでコンテナを立ち上げたときに実行するコマンドを指定する.今回はコンテナ起動時にGinサーバーを起動させたいため、main.goを実行するようにしている
+ \end{enumerate}
+
+
+\subsubsection{MySQLコンテナ}
+\begin{verbatim}
+  mysql:
+    container_name: Database_And_Exercises_DB
+    build:
+      context: ./Docker/mysql
+      dockerfile: Dockerfile
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./Docker/mysql/init:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+\end{verbatim}
+
+\begin{enumerate}
+  \item container\_nameでコンテナの名前を指定する.今回は「Database\_And\_Exercises\_DB」
+  \item buildのcontextにDockerfileのあるパスをdocker-compose.ymlから見たときのパスを入力し、docekrfileに読み込むDockerfileのファイル名を指定する
+   \item  portsでMySQLサーバーのポート番号を指定する.今回は3306番を指定した
+  \item volumesではMySQLに初期化用のsqlファイルのパスを指定して、それを元にコンテナ立ち上げ時、データベースとテーブルを作成するようにしている
+  \item environmentでMySQLコンテナ内のルートパスワードを設定している
+ \end{enumerate}
+
+\begin{verbatim}
+FROM mysql:latest
+COPY mysqld_charset.cnf /etc/mysql/conf.d/mysql_charset.cnf
+\end{verbatim}
+上のコードはMySQLコンテナのDockerfileである.
+
+以下、それぞれの部分に関する説明を行う.
+
+\begin{enumerate}
+  \item FROMはGoコンテナ同様、インストールするイメージを指定している.
+  \item COPYでインストールしたイメージにローカルのファイルをコピーしている.今回はMySQLを日本語対応させるためのカセットをコピーしている
+ \end{enumerate}
+
+
 \subsection{データベース設計}
-今回作成したサービスでは三つのテーブルが存在する.
-一つ目は、日本の都道府県を閲覧する際に使用されるkenテーブル、二つ目は、名前、メールアドレス、パスワードなど会員情報を管理するためのmemberテーブル、三つ目はメールを用いて本登録を行っていないユーザーを仮登録として保持しておくためのprememberテーブル、これら三つのデータをMariaDB/MySQLを通して行うことでシステムを動かしている.
+今回作成したアプリケーションでは二つのテーブルが存在する.
+一つ目は、部屋情報を管理するためのテーブル、部屋の参加者情報を管理するためのテーブルこれら二つのデータをMySQLを通して行うことでシステムを動かしている.
 
 以下に、それぞれのテーブルについて記述していく.
 
-\subsubsection{kenテーブル}
+
+\subsubsection{roomsテーブル}
 \begin{verbatim}
-CREATE TABLE ken (
-    id      SMALLINT,
-    ken     VARCHAR(10),
+CREATE TABLE data_sets.rooms( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    room_name VARCHAR(20), 
+    member_amount INT, 
+    summary VARCHAR(50), 
+    is_open boolean, 
+    last_update VARCHAR(25), 
+    tags VARCHAR(1023),
+    room_maker VARCHAR(15), 
     PRIMARY KEY (id)
-);
+) ENGINE = InnoDB;
 \end{verbatim}
-上のSQL文は都道府県のデータを格納するために定義されたテーブルである.
+上のテーブルは、部屋情報を管理するためのテーブルである.
 
-フィールドについて説明すると、idとはカラムを識別するため主キー、kenは都道府県の名前をを格納している.
+部屋情報とメンバー情報を結びつけるため、今回はプライマリーキーとして部屋IDを使用していて、Go側で部屋にどんなメンバーが格納されているか結合することができる.また、タグの管理は、別のテーブルを用意しているわけではなく、tagsにカンマ区切りの文字列として格納されていてフロントエンドでパースするようにした.
 
-\subsubsection{memberテーブル}
+
+\subsubsection{membersテーブル}
 \begin{verbatim}
-CREATE TABLE member (
-    id          
-    MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
-    username   	VARCHAR(50),
-    password   	VARCHAR(128),
-    last_name  	VARCHAR(50),
-    first_name 	VARCHAR(50),
-    birthday   	CHAR(8),
-    ken         SMALLINT,
-    reg_date   	DATETIME,
-    cancel      DATETIME,
-    PRIMARY KEY (id)
-);
+CREATE TABLE data_sets.members( 
+    id INT NOT NULL AUTO_INCREMENT,
+    room_id INT NOT NULL, 
+    member_name VARCHAR(15),
+    comment VARCHAR(30), 
+    tag VARCHAR(15),
+    PRIMARY KEY (id),
+    FOREIGN KEY room (room_id) REFERENCES rooms (id)
+) ENGINE = InnoDB; 
 \end{verbatim}
-上のSQL文は本登録されたユーザーのデータを格納するために定義されたテーブルである.
+上のSQL文はメンバーのデータを格納するために定義されたテーブルである.
 
-以下、それぞれのフィールドについて説明する
-
-\begin{enumerate}
-  \item idとはカラムを識別するため主キー、またUNSIGNED NOT NULLAUTO\_INCREMENTとは、カラムを追加される時に自動で順番にidフィールドに数字を格納するという意味である.ただし、0は受け付けない.
-  \item usernameフィールドは文字列で定義されていて、カッコ内にある50とは、50バイト分の文字列まで格納できるという意味である.
- \item usernameフィールドは文字列で定義されていて、カッコ内にある50とは、50バイト分の文字列まで格納できるという意味である.
-  \item passwordフィールドは文字列で定義されていて、カッコ内にある128とは、128バイト分の文字列まで格納できるという意味である.
-   \item last\_nameフィールドは文字列で定義されていて、カッコ内にある50とは、50バイト分の文字列まで格納できるという意味である.
-    \item first\_nameフィールドは文字列で定義されていて、カッコ内にある50とは、50バイト分の文字列まで格納できるという意味である.また、出身地の情報は都道府県を直接入れているわけではなく、kenテーブルで定義されているidを参照して管理している.こうすることでデータ量の多い都道府県の文字列よりもデータ量の少ない数値で管理できるためサーバーの負荷を軽減することができる.
-
-  \item kenフィールドは数値で定義されていて、SMALLINTとは、-32,767 から 32,767 までの小さい整数を格納することができる意味である.
- \item reg\_dateフィールドはDARETIME型で定義されていて、YYYY-MM-DD形式で格納されている
- \item cancelフィールドはDARETIME型で定義されていて、YYYY-MM-DD形式で格納されている  \end{enumerate}
-
-\subsubsection{prememberテーブル}
-\begin{verbatim}
-CREATE TABLE premember (
-    id          
-    MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
-    username   	VARCHAR(50),
-    password   	VARCHAR(128),
-    last_name  	VARCHAR(50),
-    first_name 	VARCHAR(50),
-    birthday   	CHAR(8),
-    ken         SMALLINT,
-    link_pass  	VARCHAR(128),
-    reg_date   	DATETIME,
-    PRIMARY KEY (id)
-);
-\end{verbatim}
-上のSQL文は仮登録されたユーザーのデータを格納するために定義されたテーブルである.
-
-基本的なフィールドはmemberテーブルとあまり差異はないが、一部異なる部分もある.link\_passフィールドである.このフィールドは本登録テーブルと仮登録テーブルの情報を結びつけるためのフィールドである.
+このテーブルはフォーリンキーとしてroomsテーブルのIDを使用していて、このIDを元にすることでそれぞれのメンバーがどこの部屋に所属しているか判別できるようにしている.
 
 %2.3
-\subsection{システム詳細}
+\subsection{HTTPリクエスト}
+このセクションでは、このアプリで用いているHTTPメソッドのエンドポイントとバックエンドで行われる処理について説明する.
+\subsubsection{GETメソッド}
+\begin{verbatim}
+/api/room?roomId=
+\end{verbatim}
+部屋情報を取得する際に使用する.
+このエンドポイントはroomIdをURLにパラメータとしてバックエンドに送ることで、roomIdに対応した部屋情報と部屋に所属しているメンバーを全て返す処理をしている.
 
 
+\subsubsection{POSTメソッド}
+\begin{verbatim}
+/api/room
+\end{verbatim}
+新しく部屋を作成するときに使用される.
+POSTメソッドでこのエンドポイントを用いて、リクエストボディに下記の形でデータを送ることでデータベースに新しくレコードを追加し、部屋を作成する.その後、バックエンドサーバーからのレスポンスとして作成した部屋の情報を返す.
 
-\begin{table}[h]
- \caption{各処理における分岐の表}
- \label{table:SpeedOfLight}
- \centering
-  \begin{tabular}{lllll}
-   \hline
-   type & action & ボタン & 処理 & 表示画面 \\
-   \hline \hline
-   無し &&& 認証 & 会員画面TOP \\
-   無し &&& 未認証 & ログイン画面 \\
-   authenticate & - & - & 認証処理OK & 会員画面TOP \\
-   authenticate & - & - & 認証処理NG & ログイン画面 \\
-   regist & form & - & - & 入力画面 \\
-   regist & confirm & - & 入力チェックOK & 確認画面 \\
-   regist & confirm & - & 入力チェックNG & 入力画面 \\
-   regist & complete & 戻る & - & 入力画面 \\
-   regist & complete & 登録 & INSERT & 完了画面 \\
-   modify & form & - & - & 入力画面 \\
-   modify & confirm & - & 入力チェックOK & 確認画面 \\
-   modify & confirm & - & 入力チェックNG & 入力画面 \\
-   modify & complete & 戻る & - & 入力画面 \\
-   modify & complete & 登録 & UPDATE & 完了画面 \\
-   delete & confirm & - & - & 入力画面 \\
-   delete & complete & - & DELETE & 完了画面 \\
-   modify & - & - & ログアウト処理 & ログイン画面 \\
-   \hline
-  \end{tabular}
-\end{table}
+\begin{verbatim}
+type Room = {
+  roomId: number;
+  roomName: string;
+  memberAmount: number;
+  summary: string;
+  isOpen: boolean;
+  lastUpdate: string;
+  members: Array<Member>;
+  roomMaker: string;
+  tags: string;
+};
+\end{verbatim}
 
-表2は，typeとactionの値によって，振り分けられるときの条件を表したものである.次の画面へ遷移されるときリンクをクリックして画面を表示させるときか、送信ボタンを押して画面を表示させるときのいずれかである. 送信ボタンを押して、画面遷移する場合は、HTTPのGETメソッドにより、パラメーターをURLに載せて、サーバに送信している.送信ボタンを押して画面遷移する場合は、HTTP の POST メソッドを用いて、ユーザーからは確認できないよう安全に値が送信される.
+\begin{verbatim}
+/api/room/:roomId/member
+\end{verbatim}
+部屋のメンバーを追加したいときに使用される
+POSTメソッドでこのエンドポイントを用いて、リクエストボディに下記の形でデータを送ることでデータベースに新しくレコードを追加し、部屋を作成する.その後、バックエンドサーバーからのレスポンスとして作成した部屋の情報を返す.ただし、tagには空文字が入力される.
+\begin{verbatim}
+type Member = {
+  memberId: number;
+  name: string;
+  comment: string;
+  tag: string;
+};
+\end{verbatim}
 
-ここで、GETメソッドとPOSTメソッドの違いについて説明する.
 
-GETメソッドはURLにパラメータを含めることで、サーバーに情報を送るHTTPリクエストの一つである.主に、あるページを取得するためにサーバーにリクエストを送る際にこのメソッドが用いられる.
+\subsubsection{PUTメソッド}
+\begin{verbatim}
+/api/room/:roomId
+\end{verbatim}
+部屋の情報、例えばメンバー受付中や部屋の説明などを変更したときに使用される.
+パラメータに変更したい部屋IDを入れた上で、リクエストボディにRoom型の値を送ることでデータベースの部屋の情報を書き換える.その後、バックエンドサーバーからのレスポンスとして変更後の部屋情報を返す.
 
-POSTメソッドとはパラメータをリクエストヘッダーに含めることで、サーバーとデータのやり取りを行うHTTPリクエストの一つである.GETメソッドと明確に異なる点として、サーバーに送った情報がユーザーには見ることができない点が挙げられる.この特徴によりPOSTメソッドは、主にデータを追加する際、今回のサンプルプログラムだとユーザーの仮登録、本登録をする際、個人情報などといった第三者に見られてはいけない情報を送信する際に用いられる.
+\begin{verbatim}
+/api/room/member/:memberId
+\end{verbatim}
+メンバーの情報を変更したときに使用される.
+パラメータに変更したい部屋IDとメンバーIDを入れた上で、リクエストボディにMember型の値を送ることで、データベースの部屋の情報を書き換える.その後、バックエンドサーバーからのレスポンスとして変更後の部屋情報を返す.
 
-メソッドの決め方としては、\$this-\>type の値でメソッドが決まり、メソッドの内部では\$this-\>action の値で処理を振り分けていく.また，送信ボタンが二つある画面では，ボタンの名称を振り分けに利用している.
+\subsubsection{DELETEメソッド}
+\begin{verbatim}
+/api/room/:roomId
+\end{verbatim}
+部屋の情報を削除したときに使用される.
+パラメータに変更したい部屋IDを入れて送ることで部屋の情報をデータベースから削除する.その後、バックエンドサーバーからのレスポンスとして削除した部屋情報を返す.
 
-\subsection{変数設計}
+\begin{verbatim}
+/api/room/member/:memberId
+\end{verbatim}
+メンバーの情報を削除したときに使用される.
+パラメータに変更したい部屋IDとメンバーIDを入れて送ることで目的のメンバーを探索し、部屋の情報をデータベースから削除する.その後、バックエンドサーバーからのレスポンスとして削除した部屋情報を返す.
+
+\subsection{ディレクトリ構成}
+\subsubsection{フロントエンド}
+フロントエンドでは主にcomponents、hooks、pagesディレクトリ以下のファイルを記述した.
+
+分け方としてはcomponents以下にUI描写に関係するTSXファイルを配置し、バックエンドにHTTPリクエストを送ったり、受け取った値をパースしたりするロジックの部分はhooksディレクトリ以下にTSファイルとして記述した.
+
+またcomponents以下のファイルはアトミックデザインを採用しており、再利用しやすい、抽象度の高いUIコンポーネント設計を意識してコーディングを行った.
+
+\subsubsection{バックエンド}
+バックエンドでは、大きくDockerファイルを管理するDockerディレクトリ、ソースコードを管理するgoディレクトリを作成した.
+
+また、今回のバックエンドサーバーはフロントエンドとデータベースを繋ぐAPIとして利用しているため、単純なシステムでよく用いられるMVCを採用してmodel、controllerとディレクトリを分けながらコーディングを行った.
 
 \subsection{各画面設計}
-各画面はQuickForm2、Smarty により、PHPファイルをもとに自動生成されている.
+各画面はfrontend/webディレクトリのpagesディレクトリ以下のTSXファイルがcomponetsディレクトリ以下のTSXファイルをインポートしながらを生成されていている.
 
-画面描写に必要なファイルはsmatryディレクトリのtemplatesディレクトリ内にある.tplファイルである.これらのファイルを読み込むことで、画面を描写することができる.
+今回のアプリケーションでは誰でも簡単に操作できることを目的としていたため、ボタンの配置を大きくしたり、大切な操作はわかりやすく暖色を使ったりとわかりやすく設計を心がけていた.
 
-\subsubsection{ログイン画面}
-ログイン画面の描写には、login.tplを用いている
+\subsubsection{ホーム画面}
+ホーム画面はindex.tsxより出力されている
 
-index.phpの情報を参照することでセッション管理を行なっていて、ログイン済みであると認証されなかった場合は、このページに遷移するようになっている.
+この画面では過去に閲覧履歴のある部屋が一覧で表示されていて、部屋のコンテンツをクリックするとその部屋の画面に遷移するようになっている.閲覧履歴の保存方法としてはローカルストレージを利用し、部屋IDを格納することで閲覧することができるようにしている.
 
-また、入力欄に入力した内容をブラウザ側で保持しつつ出るために、\$form.username.labelには，ユーザー名を格納し、\$form.username.htmlはユーザー名の入力欄、HTMLのコードに置き換わる.同様に、\$form.password.labelはパスワード名に、\$form.password.htmlはパスワー ド入力欄にHTMLのコードに置き換わる.
+\subsubsection{部屋作成画面}
+部屋作成画面の描写には、room\_building.tsxを用いている
 
-\subsubsection{仮登録表示画面}
-画面の描写にはpremember.tplが用いられる.
+ここでは、ユーザーからの入力として部屋の作成者名、部屋名、部屋の説明を受け付けた後、「作成」ボタンをクリックすることで入力された内容に応じた部屋が画面に遷移する.
 
-新規登録画面から確認画面でユーザーが登録情報を確認した後に遷移する画面であり、メールを送信した旨を伝えるための画面である.
+また、入力された値はreact-hook-formのuseFormを用いて管理していてバリデーションの実装など開発を容易にするようにした.
 
-\subsubsection{会員専用画面}
-画面の描写にはmember\_top.tplが用いられる.
 
-ログインを終えた会員とindex.phpにセッションが残っている場合は子も画面に遷移する.
+\subsubsection{部屋画面}
+部屋画面は[roomId].tsxより出力されている
 
-\subsubsection{管理者専用画面}
-画面の描写にはsystem\_login.tplが用いられる.
+この画面では部屋のメンバーの追加、削除、部屋説明の変更、タグの追加削除、メンバーの追加を受け付けるかどうかの変更を行うことができる.
 
-管理者用のパスワードを入力し、認証を終えると、このページに遷移する.
-会員一覧へのリンクは\$SCRIPT\_ NAME?type=list\& action=formとなり\$ SCRIPT\_ NAMEはsystem.phpに置き換わる。 クリックするとsystem.phpに対してtype=listとaction=formが送信され、会員一覧を表示する。
+メンバーの表示方法としては、バックエンドからメンバーの情報は配列として送られてくるため、それをフロントエンドでmapを用いて要素を取り出すことで表示するようにしている.
 
 \section{実装}
 
@@ -338,8 +459,9 @@ index.phpの情報を参照することでセッション管理を行なって�
    名前 & バージョン  \\
    \hline \hline
   OS & macOS Venture バージョン 13.4 \\
-  XAMPP &  7.4.28 \\
-  PHP & 7.4.28 \\
+  Node.js &  20.1.0 \\
+  Docker Desktop & 4.16.2 (95914) \\
+  next & 13.1.6 \\
 
    \hline
   \end{tabular}
@@ -348,94 +470,70 @@ index.phpの情報を参照することでセッション管理を行なって�
 今回は以上の表のような環境で動作確認を行なった.
 
 \subsection{環境設定}
-今回のサンプルプログラムを動作させるために必要なXAMPPの環境構築は以下のように行なった.
+\subsubsection{Docker}
 
 \begin{enumerate}
-  \item 公式サイトからXAMPPをインストールする
-  \item 設定を行い、XAMPPコントロールパネルを起動させる
-  \item  WebサーバーであるApacheを起動させる
+  \item 公式サイトからDockerをインストールする
+  \item Dockerを起動させるとメニュバーにDockerのアイコンが表示される
+  \item  表示されたアイコンをクリックして一番上に「Docker Desktop is running」と緑色の丸と一緒に表示されたいることを確認
   \end{enumerate}
 といった流れになっている.
 
-次に実際に今回のシステムを動作させるためのプログラムの配置は以下の手順で行なった
 
+\subsubsection{Node.js}
 \begin{enumerate}
-  \item 「環境構築から実践的なシステム作成まで完全習得! PHP7+MariaDB/MySQL マスターブック」に記されているサンプルデータにアクセスする
-  \item そこにあるSection77の内容を引用するために、XAMPPディレ クトリにphp\_libsを作成し、htdocsとphp\_libsに引用したサンプルプログラムをすべて移す.
-データの Section77 に入っているすべてのファイルを移す。
-  \item  コピペしたフォルダにあるファイルにアクセス権を付与する
+  \item Node.jsの公式サイトに飛ぶ
+  \item 推奨版の項目から自分の使用しているPCのOSにあったインストーラーをダウンロード
   \end{enumerate}
   
-  
-  MySQLの初期設定は以下の手順で行なった.
+  \subsection{実行方法}
+今回のアプリケーションを動作させるためにはフロントエンド、バックエンドのサーバー両方を立ち上げる必要がある.
+\subsubsection{フロントエンド}
 \begin{enumerate}
-  \item sqlフォルダを作成する
-  \item サンプルプログラムのSection76、Section86からにあるSQLファイルをコピーして、sqlフォルダに格納する
-  \item MySQLにアクセスし、予め、データベースやテーブル、初期ユーザーをインサートしておく
+  \item プロジェクトのルートディレクトリで「cd frontend/web」を実行する
+  \item 「npm run dev」でNext.jsのサーバーを立ち上げる
+  \item  「http://localhost:3000/」にアクセスする
   \end{enumerate}
-といった流れになっている.
-
-今回のサンプルプログラムでは、メールを受け取って、本登録を完了する機能が実装されている.そこで、gmailのメール受け取りに関する設定が必要になっため、その手順を以下に記す.
-
+ここで、Web画面が表示されていれば問題なくフロントエンドサーバーは立ち上がっている.
+  
+\subsubsection{バックエンド}
 
 \begin{enumerate}
-  \item gmailのWebページにアクセスする
-  \item 右上の歯車のアイコンをクリックする
-  \item 押すと、「全ての設定を表示」という項目が表示されるためそれをクリックする
-  \item 「メール転送とPOP/IMAP」をクリックする
-  \item 「IMAPアクセス」のステータスを「IMAP を有効にする」に変更する
+  \item プロジェクトのルートディレクトリで「cd backend」を実行する
+    \item 「docker compose build」でGoとMySQL二つのDockerfileをもとにDockerイメージを取得する
+  \item 「docker compose up」でMySQLコンテナとGoコンテナを立ち上げる
+  \item  「http://localhost:8080/」にアクセスする
   \end{enumerate}
+  ここで、「404 page not found」が表示されていれば問題なくバックエンドサーバーは立ち上がっている.
+  また、「docker compose up」をした時、
   
-   \begin{figure}[htbp]
-  \centering
- \includegraphics[width=8cm]{./images/all_setting.jpg}
-  \caption{全ての設定を表示ボタンが表示されている画面の図}
-  \label{fig:sample}
-\end{figure}
-  
-  \begin{figure}[htbp]
-  \centering
- \includegraphics[width=8cm]{./images/pop_imap.jpg}
-  \caption{IMAPを有効にした時の画面図}
-  \label{fig:sample}
-\end{figure}
-
-以上の手順を踏むと、Gmailのコンソール画面のうちIMAPアクセス」のステータスを「IMAP を有効にする」に変更でき、IMAPサーバーからPOPサーバーにメールの内容を送信できるようになる.
-
-また、本来Smatryを利用する際はインストールするまでに必要な手順を踏む必要があるが、サンプルプログラムを引用することでその必要は無くなったため、説明は省略することにする.
-
 \subsection{動作検証}
 画面遷移の説明の際に用いた図2の手順を踏んで行なった.
 まずは一般会員に関する動作検証を行なった.
 \begin{enumerate}
-  \item ログイン画面では自分の入力した内容がフォームにもそのまま反映されるかを検証した
-  \item 新規登録画面ではログイン画面同様、フォームにもそのまま反映されるかに加えデータベースに格納されている都道府県情報が選択できているかを検証した
-  \item 登録確認画面ではユーザーが新規登録画面で入力した値がprememberテーブルに格納され、表示できているか検証
-  \item メール確認後、本登録が完了した旨を伝える画面が表示されるかを検証
-  \item 再びログイン画面に遷移した時、新規登録で登録したメールアドレス、パスワードでログインを行えるか検証
-   \item 会員専用画面で、登録内容の修正、削除、ログアウトが行えるか検証
-  \item 「IMAPアクセス」のステータスを「IMAP を有効にする」に変更する
-   \item 「メール転送とPOP/IMAP」をクリックする
-  \item 「IMAPアクセス」のステータスを「IMAP を有効にする」に変更する
+  \item ホーム画面で「新しく部屋を作る」ボタンをクリックした時部屋作成が面に遷移するか検証
+  \item 必要項目を入力せずに「作成」ボタンを押した時バリデーションがされるかを検証
+  \item 登必要項目を入し、「作成」ボタンを押した時入力された値を元に作成された部屋画面に遷移するか検証
+  \item 部屋画面で「参加者を追加する」ボタンを押した時、モーダルが表示されるか検証
+  \item 表示されたモーダルにバリデーションが機能しているかを検証
+   \item 表示されたモーダルの「参加する」ボタンを押すことでメンバーが追加されいるか検証
+  \item 受付中の横にあるボタンを押すことで受付か締切かを切り替えることができるかを検証
+   \item 受付中の横のボタンを押すことで、「参加者を追加する」ボタンの色が切り替わるかを検証
+  \item 「新しくタグを作る」ボタンをおすとモーダルが表示されるか検証
+   \item 受付中の横にあるボタンを押すことで受付か締切かを切り替えることができるかを検証
+   \item 受付中の横のボタンを押すことで、「参加者を追加する」ボタンの色が切り替わるかを検証
+  \item 「新しくタグを作る」ボタンをおすとモーダルが表示されるか検証
+   \item タグ追加のモーダルでバリデーションが機能しているか検証
+   \item タグ追加のモーダルに必要項目を入力した上で「追加」ボタンを押すとタグが追加されるか検証
+  \item メンバーの要素の右にある「削除」ボタンを押すとモータルが表示され、削除確認を行うとメンバーが部屋から削除されるかを検証
+   \item タグ追加のモーダルでバリデーションが機能しているか検証
+    \item タグ追加のモーダルでバリデーションが機能しているか検証
+     \item タグ追加のモーダルでバリデーションが機能しているか検証
   \end{enumerate}
-  
- 次には管理者に関する動作検証を行なった.
-\begin{enumerate}
-  \item ログイン画面で管理者用のパスワードを入力することで管理者用のページに遷移することができるかを検証した
-  \item 管理者ページから会員一覧ページに遷移できるか検証
-  \item 会員一覧ページでは、会員情報を全て閲覧できるようになっているか、またそれを削除、修正することができるかを検証
-  \item メール確認後、本登録が完了した旨を伝える画面が表示されるかを検証
-  \item 再びログイン画面に遷移した時、新規登録で登録したメールアドレス、パスワードでログインを行えるか検証
-  \end{enumerate}
-  
-  以上のように一般会員、管理者の動作検証を行ったところ、画面遷移や表示内容、処理について全く不具合が確認できなかったため、システムは正常に動作していると判断した.
-  
+    
 \section{まとめ}
-今回のサンプルプログラムではPHPとMySQLを連携させて作る簡単な会員登録アプリを作成した.普段、個人またはチームでアプリ開発に取り組む際は、便利なライブラリに頼ったり、Firebaseに認証機能を任せていたりしているためメール認証で使われるSMTPサーバー、POPサーバーについて深く知ることができたことはとても良い経験になった.
 
-アプリ全体を通して、いつデータベースにアクセスして削除、追加、閲覧を行ったらよいのか、また、セッションとクッキーの管理、バリテーション、メール送信機能が実装されているため、基本的なアプリの流れを知ることができるアプリであった.
-
-また、今回のアプリは新規登録を行なってログインをして、ログイン者専用ページを表示するといったとてもシンプルなものであったが、今後、会員専用ページに機能を拡張していくことでより面白いアプリにすることができる基盤となるアプリであるとも考えた.
+今回制作したアプリケーションでは二次会を簡単に開催しようといったコンセプトのもとで行なった.しかし、人数を追加するためにQRコードかリンクを踏んでもらうかのどちらかでしか行うことができなかった.であるため、今後の展望としてはWeb NFCを用いて携帯同士を近づけることで部屋画面に遷移できるようにしたり、Web BLEで近くにいる人に一斉に部屋に参加するかどうかを聞けるような機能を実装していきたいと考えている.
 
 
 
